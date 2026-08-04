@@ -1,1 +1,2090 @@
-const TEMAS = [{"n":1,"titulo":"Operaciones con números reales, complejos y expresiones algebraicas","puntos":["Jerarquía de operaciones: paréntesis, exponentes, multiplicación/división, suma/resta.","Leyes de exponentes: aᵐ·aⁿ=aᵐ⁺ⁿ; (aᵐ)ⁿ=aᵐⁿ; a⁻ⁿ=1/aⁿ; aᵐ/ⁿ = ⁿ√(aᵐ).","Números complejos: i=√-1, i²=-1. Suma: (a+bi)+(c+di)=(a+c)+(b+d)i. Multiplicación: (a+bi)(c+di)=(ac−bd)+(ad+bc)i.","Operaciones con radicales: solo se suman/restan radicales semejantes; para racionalizar, multiplica por el conjugado o por la raíz necesaria.","Expresiones algebraicas: suma/resta de términos semejantes; multiplicación con propiedad distributiva; división de polinomios por división larga o sintética."],"ejercicios":[{"p":"Simplifica: 3² + 4×(2−5)³ ÷ 3","r":"−27"},{"p":"Calcula (2+3i) + (5−4i)","r":"7 − i"},{"p":"Calcula (1+2i)(3−i)","r":"5 + 5i"},{"p":"Simplifica √50 + √18","r":"8√2"},{"p":"Racionaliza 5/√3","r":"5√3/3"},{"p":"Simplifica (2x²y³)(3x⁴y)","r":"6x⁶y⁴"},{"p":"Divide (x³−8)/(x−2) por división sintética","r":"x² + 2x + 4"},{"p":"Simplifica 8^(2/3)","r":"4"},{"p":"Suma (3x²−5x+2) + (x²+4x−7)","r":"4x² − x − 5"},{"p":"Simplifica (a⁻²b³)/(ab⁻¹)","r":"b⁴/a³"}]},{"n":2,"titulo":"Productos notables y factorización","puntos":["Productos notables: (a+b)²=a²+2ab+b²; (a−b)²=a²−2ab+b²; (a+b)(a−b)=a²−b²; (x+a)(x+b)=x²+(a+b)x+ab.","Binomio de Newton: (a+b)ⁿ = Σ C(n,k)·aⁿ⁻ᵏbᵏ, con C(n,k)=n!/(k!(n−k)!).","Teorema del residuo: al dividir P(x) entre (x−c), el residuo es P(c).","Teorema del factor: (x−c) es factor de P(x) si y solo si P(c)=0.","Factorización: factor común, diferencia de cuadrados, trinomio cuadrado perfecto, trinomio x²+bx+c, agrupación, suma/diferencia de cubos.","Fracciones algebraicas: simplifica factorizando numerador y denominador; para sumar/restar usa común denominador; para multiplicar/dividir, opera directamente los factores."],"ejercicios":[{"p":"Desarrolla (2x−3y)²","r":"4x² − 12xy + 9y²"},{"p":"Desarrolla (x+5)(x−5)","r":"x² − 25"},{"p":"Desarrolla (a+b)⁴ usando el binomio de Newton","r":"a⁴+4a³b+6a²b²+4ab³+b⁴"},{"p":"Factoriza x² − 9","r":"(x−3)(x+3)"},{"p":"Factoriza x² − 5x + 6","r":"(x−2)(x−3)"},{"p":"Factoriza 2x³ − 8x","r":"2x(x−2)(x+2)"},{"p":"Con el teorema del residuo, halla el residuo de P(x)=x³−2x²+x−5 al dividirlo entre (x−2)","r":"−3"},{"p":"¿Es (x+1) factor de x³+3x²+3x+1?","r":"Sí, P(−1)=0"},{"p":"Simplifica (x²−4)/(x²+4x+4)","r":"(x−2)/(x+2)"},{"p":"Realiza: 3/(x−1) + 2/(x+1)","r":"(5x+1)/(x²−1)"}]},{"n":3,"titulo":"Ecuaciones","puntos":["Una ecuación se cumple solo para ciertos valores; una identidad se cumple siempre.","Propiedades de la igualdad: se puede sumar, restar, multiplicar o dividir (por un valor ≠0) el mismo número en ambos lados.","Primer grado: despeja la variable aislándola; ax+b=0 → x=−b/a.","Segundo grado: resuelve por factorización, completando el cuadrado, o con la fórmula general x=(−b±√(b²−4ac))/2a.","El discriminante (b²−4ac) indica la naturaleza de las raíces: >0 dos reales distintas, =0 una real doble, <0 dos complejas conjugadas."],"ejercicios":[{"p":"Resuelve: 3x − 7 = 2x + 5","r":"x = 12"},{"p":"Resuelve: 2(x−3) = 5x + 4","r":"x = −10/3"},{"p":"Resuelve por factorización: x² − 7x + 12 = 0","r":"x = 3, x = 4"},{"p":"Resuelve con la fórmula general: 2x² + 3x − 5 = 0","r":"x = 1, x = −5/2"},{"p":"Resuelve: x² − 4x + 4 = 0","r":"x = 2 (raíz doble)"},{"p":"Determina el discriminante y la naturaleza de las raíces de x² + 2x + 5 = 0","r":"Δ=−16, raíces complejas conjugadas"},{"p":"Resuelve: (x−2)/3 + (x+1)/2 = 4","r":"x = 5"},{"p":"Resuelve: x² = 49","r":"x = ±7"},{"p":"Resuelve: 3x² − 12 = 0","r":"x = ±2"},{"p":"Resuelve: x² + x − 6 = 0","r":"x = −3, x = 2"}]},{"n":4,"titulo":"Desigualdades","puntos":["Se pueden sumar o restar el mismo número en ambos lados sin cambiar el sentido.","Al multiplicar o dividir por un número negativo, el sentido de la desigualdad se invierte.","La solución se expresa en notación de intervalo o desigualdad.","Desigualdades compuestas (a<x<b) se resuelven trabajando sobre las tres partes a la vez."],"ejercicios":[{"p":"Resuelve: 2x + 3 > 7","r":"x > 2"},{"p":"Resuelve: −3x + 5 ≤ 11","r":"x ≥ −2"},{"p":"Resuelve: 4x − 2 < 3x + 6","r":"x < 8"},{"p":"Resuelve: −2 < x + 1 < 5","r":"−3 < x < 4"},{"p":"Resuelve: (x−3)/2 ≥ 1","r":"x ≥ 5"},{"p":"Resuelve: 5 − 2x > 1","r":"x < 2"},{"p":"Resuelve: 3(x−1) ≤ 2x + 4","r":"x ≤ 7"},{"p":"Escribe en notación de intervalo: x ≥ −2","r":"[−2, ∞)"},{"p":"Resuelve: −4x < 12","r":"x > −3"},{"p":"Resuelve: 2x − 5 ≥ 3x − 2","r":"x ≤ −3"}]},{"n":5,"titulo":"Sistemas de ecuaciones","puntos":["Sistemas 2×2: métodos de sustitución, igualación, suma-resta (eliminación) o gráfico.","Sistemas 3×3: se resuelven por eliminación sucesiva o con la Regla de Cramer usando determinantes.","Regla de Cramer: cada incógnita = determinante modificado ÷ determinante del sistema.","Un sistema puede tener solución única, infinitas soluciones (dependiente) o ninguna solución (inconsistente)."],"ejercicios":[{"p":"Resuelve por sustitución: x+y=5, x−y=1","r":"x=3, y=2"},{"p":"Resuelve por eliminación: 2x+3y=12, x−y=1","r":"x=3, y=2"},{"p":"Resuelve: 3x+2y=16, 5x−2y=8","r":"x=3, y=3.5"},{"p":"Resuelve: x+2y=4, 3x−y=5","r":"x=2, y=1"},{"p":"Resuelve por Cramer: x+y+z=6, 2x−y+z=3, x+2y−z=2","r":"x=1, y=2, z=3"},{"p":"¿El sistema x+y=3, 2x+2y=6 tiene infinitas soluciones?","r":"Sí, son la misma recta (dependiente)"},{"p":"Resuelve: 4x−y=7, 2x+y=5","r":"x=2, y=1"},{"p":"Resuelve: x/2+y=3, x−y=1","r":"x=8/3, y=5/3"},{"p":"Calcula el determinante de [[1,2],[3,4]]","r":"−2"},{"p":"Resuelve el sistema homogéneo: x+y=0, 2x−y=0","r":"x=0, y=0 (solución trivial)"}]},{"n":6,"titulo":"Funciones algebraicas","puntos":["Función: relación en la que a cada x le corresponde un único valor de y.","Dominio: conjunto de valores válidos de x. Rango/imagen: conjunto de valores que toma y.","Explícita: y=f(x). Implícita: F(x,y)=0.","Creciente: f(x) aumenta al aumentar x en un intervalo. Decreciente: disminuye.","Continua: sin saltos, huecos ni asíntotas en su dominio; discontinua si presenta alguno.","Álgebra de funciones: (f±g)(x), (f·g)(x), (f/g)(x) con g(x)≠0, y composición (f∘g)(x)=f(g(x))."],"ejercicios":[{"p":"Encuentra el dominio de f(x) = 1/(x−3)","r":"ℝ − {3}"},{"p":"Encuentra el dominio de f(x) = √(x−2)","r":"x ≥ 2"},{"p":"Encuentra el rango de f(x) = x²","r":"y ≥ 0"},{"p":"¿f(x)=x³ es creciente o decreciente en todo ℝ?","r":"Creciente"},{"p":"Dadas f(x)=x+2, g(x)=x²−1, encuentra (f+g)(x)","r":"x² + x + 1"},{"p":"Con las mismas funciones, encuentra (f·g)(x)","r":"x³ + 2x² − x − 2"},{"p":"Encuentra (f∘g)(x)","r":"x² + 1"},{"p":"¿f(x)=1/x es continua en x=0?","r":"No, es discontinua ahí"},{"p":"Convierte x²+y²=25 en dos funciones explícitas","r":"y=√(25−x²), y=−√(25−x²)"},{"p":"Encuentra el dominio de f(x)=√(x−2)/(x−5)","r":"[2,5) ∪ (5,∞)"}]},{"n":7,"titulo":"Trigonometría","puntos":["Conversión: radianes = grados × π/180.","En triángulo rectángulo: sen=opuesto/hipotenusa, cos=adyacente/hipotenusa, tan=opuesto/adyacente.","Ley de senos: a/senA = b/senB = c/senC. Ley de cosenos: c² = a²+b²−2ab·cosC.","Círculo trigonométrico: valores notables en 0°, 30°, 45°, 60°, 90°, etc.","Funciones trig: periodo de sen/cos = 2π, de tan = π; amplitud, desfasamiento y asíntotas (en tan, cot, sec, csc)."],"ejercicios":[{"p":"Convierte 45° a radianes","r":"π/4"},{"p":"Convierte 3π/2 rad a grados","r":"270°"},{"p":"En un triángulo rectángulo con catetos 3 y 4, calcula sen, cos y tan del ángulo opuesto al cateto 3","r":"sen=3/5, cos=4/5, tan=3/4"},{"p":"Calcula sen(30°), cos(60°) y tan(45°)","r":"1/2, 1/2, 1"},{"p":"Ley de senos: a=10, A=30°, B=45°. Encuentra b","r":"b ≈ 14.14"},{"p":"Ley de cosenos: a=7, b=9, C=60°. Encuentra c","r":"c ≈ 8.19"},{"p":"Determina periodo y amplitud de y=3sen(2x)","r":"periodo=π, amplitud=3"},{"p":"Determina el desfasamiento de y=cos(x−π/4)","r":"π/4 a la derecha"},{"p":"¿Dónde tiene asíntotas y=tan(x) en [0,2π]?","r":"x=π/2, x=3π/2"},{"p":"Resuelve para x en [0,2π): 2sen(x)=1","r":"x=π/6, x=5π/6"}]},{"n":8,"titulo":"Funciones exponenciales y logarítmicas","puntos":["f(x)=aˣ (a>0, a≠1): dominio ℝ, rango (0,∞), asíntota horizontal y=0.","f(x)=log_a(x): dominio (0,∞), rango ℝ, asíntota vertical x=0. Es la función inversa de la exponencial.","Propiedades: log(ab)=log a+log b; log(a/b)=log a−log b; log(aⁿ)=n·log a.","Cambio de base: log_a(x) = ln(x)/ln(a)."],"ejercicios":[{"p":"Encuentra el dominio de f(x)=log(x−3)","r":"x > 3"},{"p":"Encuentra el rango de f(x)=2ˣ","r":"y > 0"},{"p":"Resuelve: 2ˣ = 32","r":"x = 5"},{"p":"Resuelve: log₂(x) = 5","r":"x = 32"},{"p":"Simplifica: log(100) + log(10)","r":"3"},{"p":"Simplifica: log₃(9²)","r":"4"},{"p":"Resuelve: eˣ = 1","r":"x = 0"},{"p":"Usa cambio de base: log₅(20)","r":"≈ 1.86"},{"p":"Determina la asíntota de f(x)=3ˣ−2","r":"y = −2"},{"p":"Resuelve: log(x) + log(x−3) = 1","r":"x = 5"}]},{"n":9,"titulo":"Recta","puntos":["Distancia entre dos puntos: d=√((x₂−x₁)²+(y₂−y₁)²).","Pendiente: m=(y₂−y₁)/(x₂−x₁).","Formas de la ecuación: punto-pendiente y−y₁=m(x−x₁); pendiente-ordenada y=mx+b; general Ax+By+C=0.","Paralelas: m₁=m₂. Perpendiculares: m₁·m₂=−1.","Distancia de un punto a una recta: d=|Ax₀+By₀+C|/√(A²+B²).","En un triángulo: medianas se cruzan en el baricentro, mediatrices en el circuncentro, alturas en el ortocentro."],"ejercicios":[{"p":"Calcula la distancia entre (1,2) y (4,6)","r":"5"},{"p":"Encuentra la pendiente de la recta que pasa por (2,3) y (5,9)","r":"m = 2"},{"p":"Escribe la ecuación punto-pendiente con m=2 que pasa por (1,4)","r":"y−4=2(x−1)"},{"p":"Convierte y=3x−5 a la forma general","r":"3x−y−5=0"},{"p":"¿Son paralelas y=2x+1 y y=2x−4?","r":"Sí"},{"p":"¿Son perpendiculares y=3x+1 y y=−x/3+2?","r":"Sí"},{"p":"Calcula la distancia del punto (2,3) a la recta 3x+4y−6=0","r":"2.4"},{"p":"Encuentra el punto medio entre (2,−1) y (6,7)","r":"(4,3)"},{"p":"Encuentra la ecuación de la recta que pasa por (0,5) y (3,0)","r":"y=−5/3 x+5"},{"p":"Encuentra la pendiente de una recta perpendicular a y=−2x+3","r":"m=1/2"}]},{"n":10,"titulo":"Circunferencia","puntos":["Lugar geométrico de puntos equidistantes (radio) de un centro fijo.","Centro en el origen: x²+y²=r².","Centro en (h,k): (x−h)²+(y−k)²=r².","Forma general: x²+y²+Dx+Ey+F=0; se obtiene el centro/radio completando el cuadrado.","Elementos: centro, radio, diámetro, cuerda, tangente."],"ejercicios":[{"p":"Ecuación con centro en el origen y radio 5","r":"x²+y²=25"},{"p":"Ecuación con centro (2,−3) y radio 4","r":"(x−2)²+(y+3)²=16"},{"p":"Centro y radio de (x−1)²+(y+2)²=9","r":"centro(1,−2), r=3"},{"p":"Convierte (x−2)²+(y−1)²=16 a la forma general","r":"x²+y²−4x−2y−11=0"},{"p":"Centro y radio de x²+y²−6x+4y−3=0","r":"centro(3,−2), r=4"},{"p":"¿El punto (3,4) está en x²+y²=25?","r":"Sí"},{"p":"Ecuación con centro (0,0) que pasa por (3,4)","r":"x²+y²=25"},{"p":"Radio de x²+y²+2x−4y−4=0","r":"r=3"},{"p":"Ecuación con diámetro entre (0,0) y (6,8)","r":"(x−3)²+(y−4)²=25"},{"p":"¿La recta x=5 es tangente a x²+y²=25?","r":"Sí, en (5,0)"}]},{"n":11,"titulo":"Parábola","puntos":["Lugar geométrico de puntos equidistantes de un foco y una directriz.","Vértice en el origen, eje x: y²=4px (foco en (p,0)). Eje y: x²=4py (foco en (0,p)).","Vértice en (h,k): (y−k)²=4p(x−h) o (x−h)²=4p(y−k).","Elementos: vértice, foco, directriz, eje focal, lado recto = |4p|."],"ejercicios":[{"p":"Encuentra el foco de y²=8x","r":"(2,0)"},{"p":"Encuentra la directriz de x²=12y","r":"y=−3"},{"p":"Ecuación con vértice en el origen y foco en (3,0)","r":"y²=12x"},{"p":"Vértice y foco de (y−2)²=8(x−1)","r":"vértice(1,2), foco(3,2)"},{"p":"Ecuación con vértice (2,3), abre hacia arriba, p=1","r":"(x−2)²=4(y−3)"},{"p":"Lado recto de y²=20x","r":"20"},{"p":"Eje focal de x²=−4y","r":"eje y (vertical)"},{"p":"Desarrolla (y−1)²=4(x−2) a forma general","r":"y²−2y−4x+9=0"},{"p":"Directriz de la parábola con vértice(0,0) y foco (0,−2)","r":"y=2"},{"p":"¿y²=−8x abre a la izquierda o derecha?","r":"Izquierda"}]},{"n":12,"titulo":"Elipse","puntos":["Lugar geométrico: suma de distancias a dos focos es constante = 2a.","Relación entre parámetros: a²=b²+c² (a>b, c=distancia centro-foco).","Centro en el origen, eje mayor horizontal: x²/a² + y²/b² = 1.","Centro en (h,k): (x−h)²/a² + (y−k)²/b² = 1 (ajustar según orientación).","Excentricidad: e=c/a (0<e<1). Elementos: focos, vértices, eje mayor, eje menor."],"ejercicios":[{"p":"Encuentra a y b para x²/25+y²/9=1","r":"a=5, b=3"},{"p":"Calcula c para la elipse anterior","r":"c=4"},{"p":"Encuentra los focos de x²/16+y²/4=1","r":"(±2√3, 0)"},{"p":"Ecuación con centro origen, a=6, b=4, eje mayor horizontal","r":"x²/36+y²/16=1"},{"p":"Centro de (x−2)²/9+(y+1)²/4=1","r":"(2,−1)"},{"p":"Excentricidad de x²/25+y²/16=1","r":"e=3/5"},{"p":"Vértices de x²/9+y²/25=1 (eje mayor vertical)","r":"(0,±5)"},{"p":"Encuentra a, b, c de x²/4+y²/9=1","r":"a=3, b=2, c=√5"},{"p":"Ecuación con focos (±3,0) y a=5","r":"x²/25+y²/16=1"},{"p":"Longitud del eje menor de x²/49+y²/25=1","r":"10"}]},{"n":13,"titulo":"Hipérbola","puntos":["Lugar geométrico: diferencia de distancias a dos focos es constante = 2a.","Relación entre parámetros: c²=a²+b².","Centro en el origen, eje transverso x: x²/a² − y²/b² = 1.","Centro en (h,k): (x−h)²/a² − (y−k)²/b² = 1.","Asíntotas (centro en origen): y=±(b/a)x. Excentricidad e=c/a > 1."],"ejercicios":[{"p":"Encuentra a y b de x²/16−y²/9=1","r":"a=4, b=3"},{"p":"Calcula c de la hipérbola anterior","r":"c=5"},{"p":"Encuentra los focos de x²/9−y²/16=1","r":"(±5, 0)"},{"p":"Asíntotas de x²/16−y²/9=1","r":"y=±(3/4)x"},{"p":"Centro de (x−1)²/4−(y+2)²/9=1","r":"(1,−2)"},{"p":"Excentricidad de x²/9−y²/16=1","r":"e=5/3"},{"p":"Ecuación con a=5, b=12, eje transverso x, centro origen","r":"x²/25−y²/144=1"},{"p":"Vértices de y²/25−x²/9=1 (eje transverso vertical)","r":"(0,±5)"},{"p":"¿(5,0) es vértice de x²/25−y²/4=1?","r":"Sí"},{"p":"Encuentra c de y²/4−x²/12=1","r":"c=4"}]},{"n":14,"titulo":"Ecuación general de segundo grado","puntos":["Forma general: Ax²+Bxy+Cy²+Dx+Ey+F=0.","Si B=0, identifica la cónica comparando A y C: A=C → circunferencia; A≠C mismo signo → elipse; signos opuestos → hipérbola; A=0 o C=0 → parábola.","La traslación de ejes (completar el cuadrado) permite hallar el centro o vértice de la cónica."],"ejercicios":[{"p":"Identifica la cónica: x²+y²−4x+6y−3=0","r":"Circunferencia"},{"p":"Identifica la cónica: 4x²+9y²−16x−18y−11=0","r":"Elipse"},{"p":"Identifica la cónica: y²−4x−6y+13=0","r":"Parábola"},{"p":"Identifica la cónica: 9x²−4y²−36x−8y−4=0","r":"Hipérbola"},{"p":"Completa el cuadrado y halla el centro de x²+y²+8x−2y+8=0","r":"centro(−4,1), r=3"},{"p":"Identifica: x²−y²=4","r":"Hipérbola"},{"p":"Identifica: x²+4y²=16","r":"Elipse"},{"p":"Identifica: x²+y²=0","r":"Circunferencia degenerada (un punto)"},{"p":"Traslada ejes y halla el vértice de x²−6x+8y+1=0","r":"vértice(3,1)"},{"p":"Identifica la cónica: 2x²+2y²−8=0","r":"Circunferencia (x²+y²=4)"}]},{"n":15,"titulo":"Límites","puntos":["Concepto intuitivo: valor al que se aproxima f(x) cuando x se acerca a un valor a.","Teoremas de límites: de suma, producto y cociente (si el denominador no tiende a 0), y de constantes.","Formas indeterminadas (0/0, ∞/∞): se resuelven factorizando, racionalizando o simplificando antes de sustituir.","Continuidad en x=a requiere: que f(a) exista, que el límite exista, y que ambos sean iguales."],"ejercicios":[{"p":"Calcula lim(x→2) (x²+3x−1)","r":"9"},{"p":"Calcula lim(x→3) (x²−9)/(x−3)","r":"6"},{"p":"Calcula lim(x→0) (senx)/x","r":"1"},{"p":"Calcula lim(x→∞) (3x²+2)/(x²−5)","r":"3"},{"p":"Calcula lim(x→1) (x³−1)/(x−1)","r":"3"},{"p":"Calcula lim(x→4) √x","r":"2"},{"p":"¿f(x)=(x²−4)/(x−2) es continua en x=2?","r":"No (no está definida ahí)"},{"p":"Calcula lim(x→0) (1−cosx)/x","r":"0"},{"p":"Calcula lim(x→−2) (x²+5x+6)/(x+2)","r":"1"},{"p":"Calcula lim(x→∞) 5/x","r":"0"}]},{"n":16,"titulo":"La derivada","puntos":["Definición: f'(x) = lim(h→0) [f(x+h)−f(x)]/h. Representa la pendiente de la recta tangente.","Reglas básicas: d/dx(xⁿ)=nxⁿ⁻¹; regla del producto (uv)'=u'v+uv'; regla del cociente (u/v)'=(u'v−uv')/v²; regla de la cadena (f(g(x)))'=f'(g(x))·g'(x).","Derivación implícita: deriva ambos lados respecto a x tratando y como función de x.","Interpretación física: la derivada de la posición es velocidad; la derivada de la velocidad es aceleración.","Máximos/mínimos relativos: donde f'(x)=0 y cambia de signo (o f''(x)≠0). Puntos de inflexión: donde f''(x) cambia de signo."],"ejercicios":[{"p":"Deriva f(x)=x³−4x²+2x−1","r":"f'=3x²−8x+2"},{"p":"Deriva f(x)=(x²+1)(x−3)","r":"f'=3x²−6x+1"},{"p":"Deriva f(x)=(2x+1)/(x−1)","r":"f'=−3/(x−1)²"},{"p":"Deriva f(x)=(3x²−1)⁵","r":"f'=30x(3x²−1)⁴"},{"p":"Deriva implícitamente x²+y²=25 y halla dy/dx","r":"dy/dx = −x/y"},{"p":"Encuentra f''(x) de f(x)=x⁴−3x²","r":"f''=12x²−6"},{"p":"Ecuación de la tangente a f(x)=x² en x=2","r":"y=4x−4"},{"p":"s(t)=t³−6t²+9t. Encuentra la velocidad en t=2","r":"v(2)=−3"},{"p":"Puntos críticos de f(x)=x³−3x","r":"x=−1, x=1"},{"p":"Clasifica los puntos críticos anteriores","r":"x=−1 máximo relativo (2); x=1 mínimo relativo (−2)"}]},{"n":17,"titulo":"La integral","puntos":["Integral indefinida (antiderivada): ∫xⁿdx = xⁿ⁺¹/(n+1)+C (n≠−1); ∫(1/x)dx=ln|x|+C; ∫eˣdx=eˣ+C; ∫senx dx=−cosx+C; ∫cosx dx=senx+C.","Propiedades: ∫[f±g]dx=∫f dx±∫g dx; ∫k·f dx=k∫f dx.","Métodos: sustitución (cambio de variable) y por partes: ∫u dv = uv − ∫v du.","Integral definida: ∫[a,b] f(x)dx = F(b)−F(a) (Teorema Fundamental del Cálculo); representa el área bajo la curva."],"ejercicios":[{"p":"Calcula ∫(3x²−2x+5)dx","r":"x³−x²+5x+C"},{"p":"Calcula ∫(4x³−1/x)dx","r":"x⁴−ln|x|+C"},{"p":"Calcula ∫e^(2x)dx","r":"(1/2)e^(2x)+C"},{"p":"Calcula ∫x(x²+1)³dx (sustitución u=x²+1)","r":"(x²+1)⁴/8+C"},{"p":"Calcula ∫x·cos(x)dx (por partes)","r":"x·senx + cosx + C"},{"p":"Evalúa ∫[0,2] x²dx","r":"8/3"},{"p":"Evalúa ∫[1,3] (2x+1)dx","r":"10"},{"p":"Calcula ∫sen(3x)dx","r":"−cos(3x)/3+C"},{"p":"Calcula ∫√x dx","r":"(2/3)x^(3/2)+C"},{"p":"Evalúa ∫[0,π] senx dx","r":"2"}]}];
+// Datos: Guía de matematicas — Examen de ingreso a licenciatura UNAM
+// Cada ejercicio incluye "opciones" (4 respuestas) y "correcta" (índice de la respuesta correcta)
+const TEMAS = [
+  {
+    "n": 1,
+    "titulo": "Operaciones con números reales, complejos y expresiones algebraicas",
+    "puntos": [
+      "Jerarquía de operaciones: paréntesis, exponentes, multiplicación/división, suma/resta.",
+      "Leyes de exponentes: aᵐ·aⁿ=aᵐ⁺ⁿ; (aᵐ)ⁿ=aᵐⁿ; a⁻ⁿ=1/aⁿ; aᵐ/ⁿ = ⁿ√(aᵐ).",
+      "Números complejos: i=√-1, i²=-1. Suma: (a+bi)+(c+di)=(a+c)+(b+d)i. Multiplicación: (a+bi)(c+di)=(ac−bd)+(ad+bc)i.",
+      "Operaciones con radicales: solo se suman/restan radicales semejantes; para racionalizar, multiplica por el conjugado o por la raíz necesaria.",
+      "Expresiones algebraicas: suma/resta de términos semejantes; multiplicación con propiedad distributiva; división de polinomios por división larga o sintética."
+    ],
+    "ejercicios": [
+      {
+        "p": "Simplifica: 3² + 4×(2−5)³ ÷ 3",
+        "r": "−27",
+        "opciones": [
+          "b⁴/a³",
+          "5 + 5i",
+          "7 − i",
+          "−27"
+        ],
+        "correcta": 3
+      },
+      {
+        "p": "Calcula (2+3i) + (5−4i)",
+        "r": "7 − i",
+        "opciones": [
+          "x² + 2x + 4",
+          "4",
+          "−27",
+          "7 − i"
+        ],
+        "correcta": 3
+      },
+      {
+        "p": "Calcula (1+2i)(3−i)",
+        "r": "5 + 5i",
+        "opciones": [
+          "x² + 2x + 4",
+          "5 + 5i",
+          "8√2",
+          "7 − i"
+        ],
+        "correcta": 1
+      },
+      {
+        "p": "Simplifica √50 + √18",
+        "r": "8√2",
+        "opciones": [
+          "8√2",
+          "b⁴/a³",
+          "4",
+          "5 + 5i"
+        ],
+        "correcta": 0
+      },
+      {
+        "p": "Racionaliza 5/√3",
+        "r": "5√3/3",
+        "opciones": [
+          "5√3/3",
+          "5 + 5i",
+          "4x² − x − 5",
+          "−27"
+        ],
+        "correcta": 0
+      },
+      {
+        "p": "Simplifica (2x²y³)(3x⁴y)",
+        "r": "6x⁶y⁴",
+        "opciones": [
+          "6x⁶y⁴",
+          "x² + 2x + 4",
+          "7 − i",
+          "4"
+        ],
+        "correcta": 0
+      },
+      {
+        "p": "Divide (x³−8)/(x−2) por división sintética",
+        "r": "x² + 2x + 4",
+        "opciones": [
+          "5√3/3",
+          "x² + 2x + 4",
+          "7 − i",
+          "6x⁶y⁴"
+        ],
+        "correcta": 1
+      },
+      {
+        "p": "Simplifica 8^(2/3)",
+        "r": "4",
+        "opciones": [
+          "4",
+          "7 − i",
+          "5√3/3",
+          "x² + 2x + 4"
+        ],
+        "correcta": 0
+      },
+      {
+        "p": "Suma (3x²−5x+2) + (x²+4x−7)",
+        "r": "4x² − x − 5",
+        "opciones": [
+          "6x⁶y⁴",
+          "b⁴/a³",
+          "5√3/3",
+          "4x² − x − 5"
+        ],
+        "correcta": 3
+      },
+      {
+        "p": "Simplifica (a⁻²b³)/(ab⁻¹)",
+        "r": "b⁴/a³",
+        "opciones": [
+          "5√3/3",
+          "6x⁶y⁴",
+          "8√2",
+          "b⁴/a³"
+        ],
+        "correcta": 3
+      }
+    ]
+  },
+  {
+    "n": 2,
+    "titulo": "Productos notables y factorización",
+    "puntos": [
+      "Productos notables: (a+b)²=a²+2ab+b²; (a−b)²=a²−2ab+b²; (a+b)(a−b)=a²−b²; (x+a)(x+b)=x²+(a+b)x+ab.",
+      "Binomio de Newton: (a+b)ⁿ = Σ C(n,k)·aⁿ⁻ᵏbᵏ, con C(n,k)=n!/(k!(n−k)!).",
+      "Teorema del residuo: al dividir P(x) entre (x−c), el residuo es P(c).",
+      "Teorema del factor: (x−c) es factor de P(x) si y solo si P(c)=0.",
+      "Factorización: factor común, diferencia de cuadrados, trinomio cuadrado perfecto, trinomio x²+bx+c, agrupación, suma/diferencia de cubos.",
+      "Fracciones algebraicas: simplifica factorizando numerador y denominador; para sumar/restar usa común denominador; para multiplicar/dividir, opera directamente los factores."
+    ],
+    "ejercicios": [
+      {
+        "p": "Desarrolla (2x−3y)²",
+        "r": "4x² − 12xy + 9y²",
+        "opciones": [
+          "(x−2)(x−3)",
+          "2x(x−2)(x+2)",
+          "4x² − 12xy + 9y²",
+          "(5x+1)/(x²−1)"
+        ],
+        "correcta": 2
+      },
+      {
+        "p": "Desarrolla (x+5)(x−5)",
+        "r": "x² − 25",
+        "opciones": [
+          "(x−2)(x−3)",
+          "4x² − 12xy + 9y²",
+          "x² − 25",
+          "(x−2)/(x+2)"
+        ],
+        "correcta": 2
+      },
+      {
+        "p": "Desarrolla (a+b)⁴ usando el binomio de Newton",
+        "r": "a⁴+4a³b+6a²b²+4ab³+b⁴",
+        "opciones": [
+          "(x−3)(x+3)",
+          "a⁴+4a³b+6a²b²+4ab³+b⁴",
+          "4x² − 12xy + 9y²",
+          "Sí, P(−1)=0"
+        ],
+        "correcta": 1
+      },
+      {
+        "p": "Factoriza x² − 9",
+        "r": "(x−3)(x+3)",
+        "opciones": [
+          "(5x+1)/(x²−1)",
+          "(x−3)(x+3)",
+          "−3",
+          "2x(x−2)(x+2)"
+        ],
+        "correcta": 1
+      },
+      {
+        "p": "Factoriza x² − 5x + 6",
+        "r": "(x−2)(x−3)",
+        "opciones": [
+          "−3",
+          "x² − 25",
+          "(x−3)(x+3)",
+          "(x−2)(x−3)"
+        ],
+        "correcta": 3
+      },
+      {
+        "p": "Factoriza 2x³ − 8x",
+        "r": "2x(x−2)(x+2)",
+        "opciones": [
+          "−3",
+          "2x(x−2)(x+2)",
+          "x² − 25",
+          "(5x+1)/(x²−1)"
+        ],
+        "correcta": 1
+      },
+      {
+        "p": "Con el teorema del residuo, halla el residuo de P(x)=x³−2x²+x−5 al dividirlo entre (x−2)",
+        "r": "−3",
+        "opciones": [
+          "−3",
+          "(x−2)/(x+2)",
+          "(x−2)(x−3)",
+          "x² − 25"
+        ],
+        "correcta": 0
+      },
+      {
+        "p": "¿Es (x+1) factor de x³+3x²+3x+1?",
+        "r": "Sí, P(−1)=0",
+        "opciones": [
+          "2x(x−2)(x+2)",
+          "(x−2)/(x+2)",
+          "−3",
+          "Sí, P(−1)=0"
+        ],
+        "correcta": 3
+      },
+      {
+        "p": "Simplifica (x²−4)/(x²+4x+4)",
+        "r": "(x−2)/(x+2)",
+        "opciones": [
+          "(5x+1)/(x²−1)",
+          "a⁴+4a³b+6a²b²+4ab³+b⁴",
+          "(x−3)(x+3)",
+          "(x−2)/(x+2)"
+        ],
+        "correcta": 3
+      },
+      {
+        "p": "Realiza: 3/(x−1) + 2/(x+1)",
+        "r": "(5x+1)/(x²−1)",
+        "opciones": [
+          "2x(x−2)(x+2)",
+          "4x² − 12xy + 9y²",
+          "(x−3)(x+3)",
+          "(5x+1)/(x²−1)"
+        ],
+        "correcta": 3
+      }
+    ]
+  },
+  {
+    "n": 3,
+    "titulo": "Ecuaciones",
+    "puntos": [
+      "Una ecuación se cumple solo para ciertos valores; una identidad se cumple siempre.",
+      "Propiedades de la igualdad: se puede sumar, restar, multiplicar o dividir (por un valor ≠0) el mismo número en ambos lados.",
+      "Primer grado: despeja la variable aislándola; ax+b=0 → x=−b/a.",
+      "Segundo grado: resuelve por factorización, completando el cuadrado, o con la fórmula general x=(−b±√(b²−4ac))/2a.",
+      "El discriminante (b²−4ac) indica la naturaleza de las raíces: >0 dos reales distintas, =0 una real doble, <0 dos complejas conjugadas."
+    ],
+    "ejercicios": [
+      {
+        "p": "Resuelve: 3x − 7 = 2x + 5",
+        "r": "x = 12",
+        "opciones": [
+          "x = 12",
+          "Δ=−16, raíces complejas conjugadas",
+          "x = −10/3",
+          "x = 1, x = −5/2"
+        ],
+        "correcta": 0
+      },
+      {
+        "p": "Resuelve: 2(x−3) = 5x + 4",
+        "r": "x = −10/3",
+        "opciones": [
+          "x = −10/3",
+          "x = ±7",
+          "x = 3, x = 4",
+          "x = 2 (raíz doble)"
+        ],
+        "correcta": 0
+      },
+      {
+        "p": "Resuelve por factorización: x² − 7x + 12 = 0",
+        "r": "x = 3, x = 4",
+        "opciones": [
+          "x = 1, x = −5/2",
+          "x = ±7",
+          "x = −10/3",
+          "x = 3, x = 4"
+        ],
+        "correcta": 3
+      },
+      {
+        "p": "Resuelve con la fórmula general: 2x² + 3x − 5 = 0",
+        "r": "x = 1, x = −5/2",
+        "opciones": [
+          "x = 1, x = −5/2",
+          "Δ=−16, raíces complejas conjugadas",
+          "x = 5",
+          "x = −3, x = 2"
+        ],
+        "correcta": 0
+      },
+      {
+        "p": "Resuelve: x² − 4x + 4 = 0",
+        "r": "x = 2 (raíz doble)",
+        "opciones": [
+          "x = 1, x = −5/2",
+          "x = 2 (raíz doble)",
+          "x = 5",
+          "x = 3, x = 4"
+        ],
+        "correcta": 1
+      },
+      {
+        "p": "Determina el discriminante y la naturaleza de las raíces de x² + 2x + 5 = 0",
+        "r": "Δ=−16, raíces complejas conjugadas",
+        "opciones": [
+          "Δ=−16, raíces complejas conjugadas",
+          "x = −3, x = 2",
+          "x = 5",
+          "x = 3, x = 4"
+        ],
+        "correcta": 0
+      },
+      {
+        "p": "Resuelve: (x−2)/3 + (x+1)/2 = 4",
+        "r": "x = 5",
+        "opciones": [
+          "x = 5",
+          "x = −10/3",
+          "x = 2 (raíz doble)",
+          "x = −3, x = 2"
+        ],
+        "correcta": 0
+      },
+      {
+        "p": "Resuelve: x² = 49",
+        "r": "x = ±7",
+        "opciones": [
+          "x = 5",
+          "x = ±7",
+          "Δ=−16, raíces complejas conjugadas",
+          "x = 2 (raíz doble)"
+        ],
+        "correcta": 1
+      },
+      {
+        "p": "Resuelve: 3x² − 12 = 0",
+        "r": "x = ±2",
+        "opciones": [
+          "x = ±7",
+          "x = ±2",
+          "x = −3, x = 2",
+          "x = 5"
+        ],
+        "correcta": 1
+      },
+      {
+        "p": "Resuelve: x² + x − 6 = 0",
+        "r": "x = −3, x = 2",
+        "opciones": [
+          "x = ±7",
+          "x = −3, x = 2",
+          "x = −10/3",
+          "x = 12"
+        ],
+        "correcta": 1
+      }
+    ]
+  },
+  {
+    "n": 4,
+    "titulo": "Desigualdades",
+    "puntos": [
+      "Se pueden sumar o restar el mismo número en ambos lados sin cambiar el sentido.",
+      "Al multiplicar o dividir por un número negativo, el sentido de la desigualdad se invierte.",
+      "La solución se expresa en notación de intervalo o desigualdad.",
+      "Desigualdades compuestas (a<x<b) se resuelven trabajando sobre las tres partes a la vez."
+    ],
+    "ejercicios": [
+      {
+        "p": "Resuelve: 2x + 3 > 7",
+        "r": "x > 2",
+        "opciones": [
+          "x < 2",
+          "[−2, ∞)",
+          "x > −3",
+          "x > 2"
+        ],
+        "correcta": 3
+      },
+      {
+        "p": "Resuelve: −3x + 5 ≤ 11",
+        "r": "x ≥ −2",
+        "opciones": [
+          "−3 < x < 4",
+          "x ≥ −2",
+          "x ≥ 5",
+          "x ≤ −3"
+        ],
+        "correcta": 1
+      },
+      {
+        "p": "Resuelve: 4x − 2 < 3x + 6",
+        "r": "x < 8",
+        "opciones": [
+          "x ≤ 7",
+          "x < 8",
+          "−3 < x < 4",
+          "x > 2"
+        ],
+        "correcta": 1
+      },
+      {
+        "p": "Resuelve: −2 < x + 1 < 5",
+        "r": "−3 < x < 4",
+        "opciones": [
+          "−3 < x < 4",
+          "x ≤ 7",
+          "x ≥ −2",
+          "x > 2"
+        ],
+        "correcta": 0
+      },
+      {
+        "p": "Resuelve: (x−3)/2 ≥ 1",
+        "r": "x ≥ 5",
+        "opciones": [
+          "x > −3",
+          "x ≥ 5",
+          "x ≥ −2",
+          "x ≤ −3"
+        ],
+        "correcta": 1
+      },
+      {
+        "p": "Resuelve: 5 − 2x > 1",
+        "r": "x < 2",
+        "opciones": [
+          "x ≤ −3",
+          "x ≤ 7",
+          "x < 2",
+          "−3 < x < 4"
+        ],
+        "correcta": 2
+      },
+      {
+        "p": "Resuelve: 3(x−1) ≤ 2x + 4",
+        "r": "x ≤ 7",
+        "opciones": [
+          "x > −3",
+          "x ≤ 7",
+          "x ≤ −3",
+          "x < 8"
+        ],
+        "correcta": 1
+      },
+      {
+        "p": "Escribe en notación de intervalo: x ≥ −2",
+        "r": "[−2, ∞)",
+        "opciones": [
+          "x < 8",
+          "[−2, ∞)",
+          "x ≥ −2",
+          "x ≤ 7"
+        ],
+        "correcta": 1
+      },
+      {
+        "p": "Resuelve: −4x < 12",
+        "r": "x > −3",
+        "opciones": [
+          "−3 < x < 4",
+          "[−2, ∞)",
+          "x > −3",
+          "x < 8"
+        ],
+        "correcta": 2
+      },
+      {
+        "p": "Resuelve: 2x − 5 ≥ 3x − 2",
+        "r": "x ≤ −3",
+        "opciones": [
+          "x > 2",
+          "−3 < x < 4",
+          "x ≤ −3",
+          "x < 8"
+        ],
+        "correcta": 2
+      }
+    ]
+  },
+  {
+    "n": 5,
+    "titulo": "Sistemas de ecuaciones",
+    "puntos": [
+      "Sistemas 2×2: métodos de sustitución, igualación, suma-resta (eliminación) o gráfico.",
+      "Sistemas 3×3: se resuelven por eliminación sucesiva o con la Regla de Cramer usando determinantes.",
+      "Regla de Cramer: cada incógnita = determinante modificado ÷ determinante del sistema.",
+      "Un sistema puede tener solución única, infinitas soluciones (dependiente) o ninguna solución (inconsistente)."
+    ],
+    "ejercicios": [
+      {
+        "p": "Resuelve por sustitución: x+y=5, x−y=1",
+        "r": "x=3, y=2",
+        "opciones": [
+          "x=3, y=2",
+          "−2",
+          "x=2, y=1",
+          "x=8/3, y=5/3"
+        ],
+        "correcta": 0
+      },
+      {
+        "p": "Resuelve por eliminación: 2x+3y=12, x−y=1",
+        "r": "x=3, y=2",
+        "opciones": [
+          "x=0, y=0 (solución trivial)",
+          "x=3, y=2",
+          "−2",
+          "x=2, y=1"
+        ],
+        "correcta": 1
+      },
+      {
+        "p": "Resuelve: 3x+2y=16, 5x−2y=8",
+        "r": "x=3, y=3.5",
+        "opciones": [
+          "Sí, son la misma recta (dependiente)",
+          "x=3, y=3.5",
+          "x=8/3, y=5/3",
+          "x=2, y=1"
+        ],
+        "correcta": 1
+      },
+      {
+        "p": "Resuelve: x+2y=4, 3x−y=5",
+        "r": "x=2, y=1",
+        "opciones": [
+          "x=2, y=1",
+          "x=3, y=3.5",
+          "Sí, son la misma recta (dependiente)",
+          "x=3, y=2"
+        ],
+        "correcta": 0
+      },
+      {
+        "p": "Resuelve por Cramer: x+y+z=6, 2x−y+z=3, x+2y−z=2",
+        "r": "x=1, y=2, z=3",
+        "opciones": [
+          "x=1, y=2, z=3",
+          "x=3, y=2",
+          "x=3, y=3.5",
+          "x=8/3, y=5/3"
+        ],
+        "correcta": 0
+      },
+      {
+        "p": "¿El sistema x+y=3, 2x+2y=6 tiene infinitas soluciones?",
+        "r": "Sí, son la misma recta (dependiente)",
+        "opciones": [
+          "x=3, y=2",
+          "x=2, y=1",
+          "x=3, y=2",
+          "Sí, son la misma recta (dependiente)"
+        ],
+        "correcta": 3
+      },
+      {
+        "p": "Resuelve: 4x−y=7, 2x+y=5",
+        "r": "x=2, y=1",
+        "opciones": [
+          "x=2, y=1",
+          "−2",
+          "x=1, y=2, z=3",
+          "x=3, y=2"
+        ],
+        "correcta": 0
+      },
+      {
+        "p": "Resuelve: x/2+y=3, x−y=1",
+        "r": "x=8/3, y=5/3",
+        "opciones": [
+          "x=8/3, y=5/3",
+          "x=1, y=2, z=3",
+          "x=3, y=2",
+          "x=3, y=3.5"
+        ],
+        "correcta": 0
+      },
+      {
+        "p": "Calcula el determinante de [[1,2],[3,4]]",
+        "r": "−2",
+        "opciones": [
+          "x=3, y=2",
+          "x=1, y=2, z=3",
+          "−2",
+          "x=3, y=2"
+        ],
+        "correcta": 2
+      },
+      {
+        "p": "Resuelve el sistema homogéneo: x+y=0, 2x−y=0",
+        "r": "x=0, y=0 (solución trivial)",
+        "opciones": [
+          "x=3, y=3.5",
+          "x=0, y=0 (solución trivial)",
+          "x=2, y=1",
+          "x=8/3, y=5/3"
+        ],
+        "correcta": 1
+      }
+    ]
+  },
+  {
+    "n": 6,
+    "titulo": "Funciones algebraicas",
+    "puntos": [
+      "Función: relación en la que a cada x le corresponde un único valor de y.",
+      "Dominio: conjunto de valores válidos de x. Rango/imagen: conjunto de valores que toma y.",
+      "Explícita: y=f(x). Implícita: F(x,y)=0.",
+      "Creciente: f(x) aumenta al aumentar x en un intervalo. Decreciente: disminuye.",
+      "Continua: sin saltos, huecos ni asíntotas en su dominio; discontinua si presenta alguno.",
+      "Álgebra de funciones: (f±g)(x), (f·g)(x), (f/g)(x) con g(x)≠0, y composición (f∘g)(x)=f(g(x))."
+    ],
+    "ejercicios": [
+      {
+        "p": "Encuentra el dominio de f(x) = 1/(x−3)",
+        "r": "ℝ − {3}",
+        "opciones": [
+          "x² + 1",
+          "ℝ − {3}",
+          "y ≥ 0",
+          "No, es discontinua ahí"
+        ],
+        "correcta": 1
+      },
+      {
+        "p": "Encuentra el dominio de f(x) = √(x−2)",
+        "r": "x ≥ 2",
+        "opciones": [
+          "ℝ − {3}",
+          "x ≥ 2",
+          "No, es discontinua ahí",
+          "[2,5) ∪ (5,∞)"
+        ],
+        "correcta": 1
+      },
+      {
+        "p": "Encuentra el rango de f(x) = x²",
+        "r": "y ≥ 0",
+        "opciones": [
+          "x² + 1",
+          "y ≥ 0",
+          "ℝ − {3}",
+          "Creciente"
+        ],
+        "correcta": 1
+      },
+      {
+        "p": "¿f(x)=x³ es creciente o decreciente en todo ℝ?",
+        "r": "Creciente",
+        "opciones": [
+          "y ≥ 0",
+          "x³ + 2x² − x − 2",
+          "Creciente",
+          "x² + x + 1"
+        ],
+        "correcta": 2
+      },
+      {
+        "p": "Dadas f(x)=x+2, g(x)=x²−1, encuentra (f+g)(x)",
+        "r": "x² + x + 1",
+        "opciones": [
+          "x³ + 2x² − x − 2",
+          "x² + 1",
+          "ℝ − {3}",
+          "x² + x + 1"
+        ],
+        "correcta": 3
+      },
+      {
+        "p": "Con las mismas funciones, encuentra (f·g)(x)",
+        "r": "x³ + 2x² − x − 2",
+        "opciones": [
+          "y ≥ 0",
+          "x² + x + 1",
+          "No, es discontinua ahí",
+          "x³ + 2x² − x − 2"
+        ],
+        "correcta": 3
+      },
+      {
+        "p": "Encuentra (f∘g)(x)",
+        "r": "x² + 1",
+        "opciones": [
+          "No, es discontinua ahí",
+          "x² + 1",
+          "Creciente",
+          "y=√(25−x²), y=−√(25−x²)"
+        ],
+        "correcta": 1
+      },
+      {
+        "p": "¿f(x)=1/x es continua en x=0?",
+        "r": "No, es discontinua ahí",
+        "opciones": [
+          "x³ + 2x² − x − 2",
+          "No, es discontinua ahí",
+          "ℝ − {3}",
+          "y ≥ 0"
+        ],
+        "correcta": 1
+      },
+      {
+        "p": "Convierte x²+y²=25 en dos funciones explícitas",
+        "r": "y=√(25−x²), y=−√(25−x²)",
+        "opciones": [
+          "x² + x + 1",
+          "Creciente",
+          "x ≥ 2",
+          "y=√(25−x²), y=−√(25−x²)"
+        ],
+        "correcta": 3
+      },
+      {
+        "p": "Encuentra el dominio de f(x)=√(x−2)/(x−5)",
+        "r": "[2,5) ∪ (5,∞)",
+        "opciones": [
+          "x ≥ 2",
+          "x² + x + 1",
+          "No, es discontinua ahí",
+          "[2,5) ∪ (5,∞)"
+        ],
+        "correcta": 3
+      }
+    ]
+  },
+  {
+    "n": 7,
+    "titulo": "Trigonometría",
+    "puntos": [
+      "Conversión: radianes = grados × π/180.",
+      "En triángulo rectángulo: sen=opuesto/hipotenusa, cos=adyacente/hipotenusa, tan=opuesto/adyacente.",
+      "Ley de senos: a/senA = b/senB = c/senC. Ley de cosenos: c² = a²+b²−2ab·cosC.",
+      "Círculo trigonométrico: valores notables en 0°, 30°, 45°, 60°, 90°, etc.",
+      "Funciones trig: periodo de sen/cos = 2π, de tan = π; amplitud, desfasamiento y asíntotas (en tan, cot, sec, csc)."
+    ],
+    "ejercicios": [
+      {
+        "p": "Convierte 45° a radianes",
+        "r": "π/4",
+        "opciones": [
+          "x=π/2, x=3π/2",
+          "1/2, 1/2, 1",
+          "b ≈ 14.14",
+          "π/4"
+        ],
+        "correcta": 3
+      },
+      {
+        "p": "Convierte 3π/2 rad a grados",
+        "r": "270°",
+        "opciones": [
+          "x=π/6, x=5π/6",
+          "270°",
+          "periodo=π, amplitud=3",
+          "x=π/2, x=3π/2"
+        ],
+        "correcta": 1
+      },
+      {
+        "p": "En un triángulo rectángulo con catetos 3 y 4, calcula sen, cos y tan del ángulo opuesto al cateto 3",
+        "r": "sen=3/5, cos=4/5, tan=3/4",
+        "opciones": [
+          "270°",
+          "π/4 a la derecha",
+          "sen=3/5, cos=4/5, tan=3/4",
+          "1/2, 1/2, 1"
+        ],
+        "correcta": 2
+      },
+      {
+        "p": "Calcula sen(30°), cos(60°) y tan(45°)",
+        "r": "1/2, 1/2, 1",
+        "opciones": [
+          "b ≈ 14.14",
+          "π/4 a la derecha",
+          "1/2, 1/2, 1",
+          "c ≈ 8.19"
+        ],
+        "correcta": 2
+      },
+      {
+        "p": "Ley de senos: a=10, A=30°, B=45°. Encuentra b",
+        "r": "b ≈ 14.14",
+        "opciones": [
+          "x=π/2, x=3π/2",
+          "π/4 a la derecha",
+          "b ≈ 14.14",
+          "x=π/6, x=5π/6"
+        ],
+        "correcta": 2
+      },
+      {
+        "p": "Ley de cosenos: a=7, b=9, C=60°. Encuentra c",
+        "r": "c ≈ 8.19",
+        "opciones": [
+          "c ≈ 8.19",
+          "270°",
+          "π/4",
+          "π/4 a la derecha"
+        ],
+        "correcta": 0
+      },
+      {
+        "p": "Determina periodo y amplitud de y=3sen(2x)",
+        "r": "periodo=π, amplitud=3",
+        "opciones": [
+          "π/4 a la derecha",
+          "b ≈ 14.14",
+          "periodo=π, amplitud=3",
+          "270°"
+        ],
+        "correcta": 2
+      },
+      {
+        "p": "Determina el desfasamiento de y=cos(x−π/4)",
+        "r": "π/4 a la derecha",
+        "opciones": [
+          "b ≈ 14.14",
+          "c ≈ 8.19",
+          "270°",
+          "π/4 a la derecha"
+        ],
+        "correcta": 3
+      },
+      {
+        "p": "¿Dónde tiene asíntotas y=tan(x) en [0,2π]?",
+        "r": "x=π/2, x=3π/2",
+        "opciones": [
+          "b ≈ 14.14",
+          "periodo=π, amplitud=3",
+          "x=π/2, x=3π/2",
+          "π/4 a la derecha"
+        ],
+        "correcta": 2
+      },
+      {
+        "p": "Resuelve para x en [0,2π): 2sen(x)=1",
+        "r": "x=π/6, x=5π/6",
+        "opciones": [
+          "270°",
+          "sen=3/5, cos=4/5, tan=3/4",
+          "x=π/6, x=5π/6",
+          "periodo=π, amplitud=3"
+        ],
+        "correcta": 2
+      }
+    ]
+  },
+  {
+    "n": 8,
+    "titulo": "Funciones exponenciales y logarítmicas",
+    "puntos": [
+      "f(x)=aˣ (a>0, a≠1): dominio ℝ, rango (0,∞), asíntota horizontal y=0.",
+      "f(x)=log_a(x): dominio (0,∞), rango ℝ, asíntota vertical x=0. Es la función inversa de la exponencial.",
+      "Propiedades: log(ab)=log a+log b; log(a/b)=log a−log b; log(aⁿ)=n·log a.",
+      "Cambio de base: log_a(x) = ln(x)/ln(a)."
+    ],
+    "ejercicios": [
+      {
+        "p": "Encuentra el dominio de f(x)=log(x−3)",
+        "r": "x > 3",
+        "opciones": [
+          "x > 3",
+          "x = 5",
+          "x = 0",
+          "y = −2"
+        ],
+        "correcta": 0
+      },
+      {
+        "p": "Encuentra el rango de f(x)=2ˣ",
+        "r": "y > 0",
+        "opciones": [
+          "x = 0",
+          "x = 32",
+          "x = 5",
+          "y > 0"
+        ],
+        "correcta": 3
+      },
+      {
+        "p": "Resuelve: 2ˣ = 32",
+        "r": "x = 5",
+        "opciones": [
+          "x = 32",
+          "x = 5",
+          "3",
+          "4"
+        ],
+        "correcta": 1
+      },
+      {
+        "p": "Resuelve: log₂(x) = 5",
+        "r": "x = 32",
+        "opciones": [
+          "x > 3",
+          "4",
+          "x = 32",
+          "x = 5"
+        ],
+        "correcta": 2
+      },
+      {
+        "p": "Simplifica: log(100) + log(10)",
+        "r": "3",
+        "opciones": [
+          "y = −2",
+          "3",
+          "4",
+          "x = 5"
+        ],
+        "correcta": 1
+      },
+      {
+        "p": "Simplifica: log₃(9²)",
+        "r": "4",
+        "opciones": [
+          "3",
+          "x = 5",
+          "4",
+          "≈ 1.86"
+        ],
+        "correcta": 2
+      },
+      {
+        "p": "Resuelve: eˣ = 1",
+        "r": "x = 0",
+        "opciones": [
+          "x = 0",
+          "x = 5",
+          "x = 32",
+          "4"
+        ],
+        "correcta": 0
+      },
+      {
+        "p": "Usa cambio de base: log₅(20)",
+        "r": "≈ 1.86",
+        "opciones": [
+          "x = 5",
+          "4",
+          "≈ 1.86",
+          "x = 5"
+        ],
+        "correcta": 2
+      },
+      {
+        "p": "Determina la asíntota de f(x)=3ˣ−2",
+        "r": "y = −2",
+        "opciones": [
+          "3",
+          "y = −2",
+          "x = 5",
+          "≈ 1.86"
+        ],
+        "correcta": 1
+      },
+      {
+        "p": "Resuelve: log(x) + log(x−3) = 1",
+        "r": "x = 5",
+        "opciones": [
+          "x = 5",
+          "x = 0",
+          "4",
+          "y = −2"
+        ],
+        "correcta": 0
+      }
+    ]
+  },
+  {
+    "n": 9,
+    "titulo": "Recta",
+    "puntos": [
+      "Distancia entre dos puntos: d=√((x₂−x₁)²+(y₂−y₁)²).",
+      "Pendiente: m=(y₂−y₁)/(x₂−x₁).",
+      "Formas de la ecuación: punto-pendiente y−y₁=m(x−x₁); pendiente-ordenada y=mx+b; general Ax+By+C=0.",
+      "Paralelas: m₁=m₂. Perpendiculares: m₁·m₂=−1.",
+      "Distancia de un punto a una recta: d=|Ax₀+By₀+C|/√(A²+B²).",
+      "En un triángulo: medianas se cruzan en el baricentro, mediatrices en el circuncentro, alturas en el ortocentro."
+    ],
+    "ejercicios": [
+      {
+        "p": "Calcula la distancia entre (1,2) y (4,6)",
+        "r": "5",
+        "opciones": [
+          "m = 2",
+          "2.4",
+          "Sí",
+          "5"
+        ],
+        "correcta": 3
+      },
+      {
+        "p": "Encuentra la pendiente de la recta que pasa por (2,3) y (5,9)",
+        "r": "m = 2",
+        "opciones": [
+          "Sí",
+          "m=1/2",
+          "m = 2",
+          "2.4"
+        ],
+        "correcta": 2
+      },
+      {
+        "p": "Escribe la ecuación punto-pendiente con m=2 que pasa por (1,4)",
+        "r": "y−4=2(x−1)",
+        "opciones": [
+          "y−4=2(x−1)",
+          "Sí",
+          "3x−y−5=0",
+          "Sí"
+        ],
+        "correcta": 0
+      },
+      {
+        "p": "Convierte y=3x−5 a la forma general",
+        "r": "3x−y−5=0",
+        "opciones": [
+          "(4,3)",
+          "y=−5/3 x+5",
+          "3x−y−5=0",
+          "2.4"
+        ],
+        "correcta": 2
+      },
+      {
+        "p": "¿Son paralelas y=2x+1 y y=2x−4?",
+        "r": "Sí",
+        "opciones": [
+          "Sí",
+          "3x−y−5=0",
+          "y−4=2(x−1)",
+          "m=1/2"
+        ],
+        "correcta": 0
+      },
+      {
+        "p": "¿Son perpendiculares y=3x+1 y y=−x/3+2?",
+        "r": "Sí",
+        "opciones": [
+          "y=−5/3 x+5",
+          "Sí",
+          "2.4",
+          "m=1/2"
+        ],
+        "correcta": 1
+      },
+      {
+        "p": "Calcula la distancia del punto (2,3) a la recta 3x+4y−6=0",
+        "r": "2.4",
+        "opciones": [
+          "5",
+          "m=1/2",
+          "(4,3)",
+          "2.4"
+        ],
+        "correcta": 3
+      },
+      {
+        "p": "Encuentra el punto medio entre (2,−1) y (6,7)",
+        "r": "(4,3)",
+        "opciones": [
+          "5",
+          "(4,3)",
+          "m = 2",
+          "Sí"
+        ],
+        "correcta": 1
+      },
+      {
+        "p": "Encuentra la ecuación de la recta que pasa por (0,5) y (3,0)",
+        "r": "y=−5/3 x+5",
+        "opciones": [
+          "Sí",
+          "2.4",
+          "m = 2",
+          "y=−5/3 x+5"
+        ],
+        "correcta": 3
+      },
+      {
+        "p": "Encuentra la pendiente de una recta perpendicular a y=−2x+3",
+        "r": "m=1/2",
+        "opciones": [
+          "m=1/2",
+          "(4,3)",
+          "5",
+          "y=−5/3 x+5"
+        ],
+        "correcta": 0
+      }
+    ]
+  },
+  {
+    "n": 10,
+    "titulo": "Circunferencia",
+    "puntos": [
+      "Lugar geométrico de puntos equidistantes (radio) de un centro fijo.",
+      "Centro en el origen: x²+y²=r².",
+      "Centro en (h,k): (x−h)²+(y−k)²=r².",
+      "Forma general: x²+y²+Dx+Ey+F=0; se obtiene el centro/radio completando el cuadrado.",
+      "Elementos: centro, radio, diámetro, cuerda, tangente."
+    ],
+    "ejercicios": [
+      {
+        "p": "Ecuación con centro en el origen y radio 5",
+        "r": "x²+y²=25",
+        "opciones": [
+          "centro(3,−2), r=4",
+          "centro(1,−2), r=3",
+          "Sí",
+          "x²+y²=25"
+        ],
+        "correcta": 3
+      },
+      {
+        "p": "Ecuación con centro (2,−3) y radio 4",
+        "r": "(x−2)²+(y+3)²=16",
+        "opciones": [
+          "r=3",
+          "centro(1,−2), r=3",
+          "(x−2)²+(y+3)²=16",
+          "x²+y²=25"
+        ],
+        "correcta": 2
+      },
+      {
+        "p": "Centro y radio de (x−1)²+(y+2)²=9",
+        "r": "centro(1,−2), r=3",
+        "opciones": [
+          "x²+y²=25",
+          "centro(1,−2), r=3",
+          "Sí, en (5,0)",
+          "(x−2)²+(y+3)²=16"
+        ],
+        "correcta": 1
+      },
+      {
+        "p": "Convierte (x−2)²+(y−1)²=16 a la forma general",
+        "r": "x²+y²−4x−2y−11=0",
+        "opciones": [
+          "centro(3,−2), r=4",
+          "Sí",
+          "x²+y²−4x−2y−11=0",
+          "x²+y²=25"
+        ],
+        "correcta": 2
+      },
+      {
+        "p": "Centro y radio de x²+y²−6x+4y−3=0",
+        "r": "centro(3,−2), r=4",
+        "opciones": [
+          "r=3",
+          "centro(3,−2), r=4",
+          "(x−3)²+(y−4)²=25",
+          "Sí"
+        ],
+        "correcta": 1
+      },
+      {
+        "p": "¿El punto (3,4) está en x²+y²=25?",
+        "r": "Sí",
+        "opciones": [
+          "x²+y²−4x−2y−11=0",
+          "Sí",
+          "centro(3,−2), r=4",
+          "x²+y²=25"
+        ],
+        "correcta": 1
+      },
+      {
+        "p": "Ecuación con centro (0,0) que pasa por (3,4)",
+        "r": "x²+y²=25",
+        "opciones": [
+          "(x−2)²+(y+3)²=16",
+          "x²+y²=25",
+          "centro(3,−2), r=4",
+          "r=3"
+        ],
+        "correcta": 1
+      },
+      {
+        "p": "Radio de x²+y²+2x−4y−4=0",
+        "r": "r=3",
+        "opciones": [
+          "Sí, en (5,0)",
+          "x²+y²−4x−2y−11=0",
+          "x²+y²=25",
+          "r=3"
+        ],
+        "correcta": 3
+      },
+      {
+        "p": "Ecuación con diámetro entre (0,0) y (6,8)",
+        "r": "(x−3)²+(y−4)²=25",
+        "opciones": [
+          "centro(3,−2), r=4",
+          "Sí, en (5,0)",
+          "x²+y²−4x−2y−11=0",
+          "(x−3)²+(y−4)²=25"
+        ],
+        "correcta": 3
+      },
+      {
+        "p": "¿La recta x=5 es tangente a x²+y²=25?",
+        "r": "Sí, en (5,0)",
+        "opciones": [
+          "centro(3,−2), r=4",
+          "(x−2)²+(y+3)²=16",
+          "x²+y²=25",
+          "Sí, en (5,0)"
+        ],
+        "correcta": 3
+      }
+    ]
+  },
+  {
+    "n": 11,
+    "titulo": "Parábola",
+    "puntos": [
+      "Lugar geométrico de puntos equidistantes de un foco y una directriz.",
+      "Vértice en el origen, eje x: y²=4px (foco en (p,0)). Eje y: x²=4py (foco en (0,p)).",
+      "Vértice en (h,k): (y−k)²=4p(x−h) o (x−h)²=4p(y−k).",
+      "Elementos: vértice, foco, directriz, eje focal, lado recto = |4p|."
+    ],
+    "ejercicios": [
+      {
+        "p": "Encuentra el foco de y²=8x",
+        "r": "(2,0)",
+        "opciones": [
+          "y=−3",
+          "(2,0)",
+          "(x−2)²=4(y−3)",
+          "eje y (vertical)"
+        ],
+        "correcta": 1
+      },
+      {
+        "p": "Encuentra la directriz de x²=12y",
+        "r": "y=−3",
+        "opciones": [
+          "y=−3",
+          "vértice(1,2), foco(3,2)",
+          "eje y (vertical)",
+          "(2,0)"
+        ],
+        "correcta": 0
+      },
+      {
+        "p": "Ecuación con vértice en el origen y foco en (3,0)",
+        "r": "y²=12x",
+        "opciones": [
+          "Izquierda",
+          "y=2",
+          "(x−2)²=4(y−3)",
+          "y²=12x"
+        ],
+        "correcta": 3
+      },
+      {
+        "p": "Vértice y foco de (y−2)²=8(x−1)",
+        "r": "vértice(1,2), foco(3,2)",
+        "opciones": [
+          "(2,0)",
+          "vértice(1,2), foco(3,2)",
+          "y²=12x",
+          "y²−2y−4x+9=0"
+        ],
+        "correcta": 1
+      },
+      {
+        "p": "Ecuación con vértice (2,3), abre hacia arriba, p=1",
+        "r": "(x−2)²=4(y−3)",
+        "opciones": [
+          "20",
+          "(x−2)²=4(y−3)",
+          "vértice(1,2), foco(3,2)",
+          "y=2"
+        ],
+        "correcta": 1
+      },
+      {
+        "p": "Lado recto de y²=20x",
+        "r": "20",
+        "opciones": [
+          "20",
+          "(x−2)²=4(y−3)",
+          "Izquierda",
+          "eje y (vertical)"
+        ],
+        "correcta": 0
+      },
+      {
+        "p": "Eje focal de x²=−4y",
+        "r": "eje y (vertical)",
+        "opciones": [
+          "(x−2)²=4(y−3)",
+          "y²−2y−4x+9=0",
+          "y²=12x",
+          "eje y (vertical)"
+        ],
+        "correcta": 3
+      },
+      {
+        "p": "Desarrolla (y−1)²=4(x−2) a forma general",
+        "r": "y²−2y−4x+9=0",
+        "opciones": [
+          "y=2",
+          "(2,0)",
+          "20",
+          "y²−2y−4x+9=0"
+        ],
+        "correcta": 3
+      },
+      {
+        "p": "Directriz de la parábola con vértice(0,0) y foco (0,−2)",
+        "r": "y=2",
+        "opciones": [
+          "y=2",
+          "y²=12x",
+          "Izquierda",
+          "y=−3"
+        ],
+        "correcta": 0
+      },
+      {
+        "p": "¿y²=−8x abre a la izquierda o derecha?",
+        "r": "Izquierda",
+        "opciones": [
+          "(2,0)",
+          "eje y (vertical)",
+          "y=−3",
+          "Izquierda"
+        ],
+        "correcta": 3
+      }
+    ]
+  },
+  {
+    "n": 12,
+    "titulo": "Elipse",
+    "puntos": [
+      "Lugar geométrico: suma de distancias a dos focos es constante = 2a.",
+      "Relación entre parámetros: a²=b²+c² (a>b, c=distancia centro-foco).",
+      "Centro en el origen, eje mayor horizontal: x²/a² + y²/b² = 1.",
+      "Centro en (h,k): (x−h)²/a² + (y−k)²/b² = 1 (ajustar según orientación).",
+      "Excentricidad: e=c/a (0<e<1). Elementos: focos, vértices, eje mayor, eje menor."
+    ],
+    "ejercicios": [
+      {
+        "p": "Encuentra a y b para x²/25+y²/9=1",
+        "r": "a=5, b=3",
+        "opciones": [
+          "a=5, b=3",
+          "(±2√3, 0)",
+          "10",
+          "c=4"
+        ],
+        "correcta": 0
+      },
+      {
+        "p": "Calcula c para la elipse anterior",
+        "r": "c=4",
+        "opciones": [
+          "a=5, b=3",
+          "10",
+          "x²/25+y²/16=1",
+          "c=4"
+        ],
+        "correcta": 3
+      },
+      {
+        "p": "Encuentra los focos de x²/16+y²/4=1",
+        "r": "(±2√3, 0)",
+        "opciones": [
+          "x²/36+y²/16=1",
+          "a=5, b=3",
+          "(±2√3, 0)",
+          "(0,±5)"
+        ],
+        "correcta": 2
+      },
+      {
+        "p": "Ecuación con centro origen, a=6, b=4, eje mayor horizontal",
+        "r": "x²/36+y²/16=1",
+        "opciones": [
+          "x²/36+y²/16=1",
+          "(±2√3, 0)",
+          "a=5, b=3",
+          "a=3, b=2, c=√5"
+        ],
+        "correcta": 0
+      },
+      {
+        "p": "Centro de (x−2)²/9+(y+1)²/4=1",
+        "r": "(2,−1)",
+        "opciones": [
+          "(2,−1)",
+          "(±2√3, 0)",
+          "x²/36+y²/16=1",
+          "a=3, b=2, c=√5"
+        ],
+        "correcta": 0
+      },
+      {
+        "p": "Excentricidad de x²/25+y²/16=1",
+        "r": "e=3/5",
+        "opciones": [
+          "x²/25+y²/16=1",
+          "a=3, b=2, c=√5",
+          "e=3/5",
+          "(±2√3, 0)"
+        ],
+        "correcta": 2
+      },
+      {
+        "p": "Vértices de x²/9+y²/25=1 (eje mayor vertical)",
+        "r": "(0,±5)",
+        "opciones": [
+          "x²/25+y²/16=1",
+          "a=3, b=2, c=√5",
+          "e=3/5",
+          "(0,±5)"
+        ],
+        "correcta": 3
+      },
+      {
+        "p": "Encuentra a, b, c de x²/4+y²/9=1",
+        "r": "a=3, b=2, c=√5",
+        "opciones": [
+          "a=5, b=3",
+          "10",
+          "(2,−1)",
+          "a=3, b=2, c=√5"
+        ],
+        "correcta": 3
+      },
+      {
+        "p": "Ecuación con focos (±3,0) y a=5",
+        "r": "x²/25+y²/16=1",
+        "opciones": [
+          "(0,±5)",
+          "(±2√3, 0)",
+          "x²/25+y²/16=1",
+          "x²/36+y²/16=1"
+        ],
+        "correcta": 2
+      },
+      {
+        "p": "Longitud del eje menor de x²/49+y²/25=1",
+        "r": "10",
+        "opciones": [
+          "10",
+          "c=4",
+          "e=3/5",
+          "(0,±5)"
+        ],
+        "correcta": 0
+      }
+    ]
+  },
+  {
+    "n": 13,
+    "titulo": "Hipérbola",
+    "puntos": [
+      "Lugar geométrico: diferencia de distancias a dos focos es constante = 2a.",
+      "Relación entre parámetros: c²=a²+b².",
+      "Centro en el origen, eje transverso x: x²/a² − y²/b² = 1.",
+      "Centro en (h,k): (x−h)²/a² − (y−k)²/b² = 1.",
+      "Asíntotas (centro en origen): y=±(b/a)x. Excentricidad e=c/a > 1."
+    ],
+    "ejercicios": [
+      {
+        "p": "Encuentra a y b de x²/16−y²/9=1",
+        "r": "a=4, b=3",
+        "opciones": [
+          "e=5/3",
+          "(0,±5)",
+          "a=4, b=3",
+          "y=±(3/4)x"
+        ],
+        "correcta": 2
+      },
+      {
+        "p": "Calcula c de la hipérbola anterior",
+        "r": "c=5",
+        "opciones": [
+          "c=5",
+          "Sí",
+          "(0,±5)",
+          "(1,−2)"
+        ],
+        "correcta": 0
+      },
+      {
+        "p": "Encuentra los focos de x²/9−y²/16=1",
+        "r": "(±5, 0)",
+        "opciones": [
+          "(±5, 0)",
+          "c=5",
+          "a=4, b=3",
+          "y=±(3/4)x"
+        ],
+        "correcta": 0
+      },
+      {
+        "p": "Asíntotas de x²/16−y²/9=1",
+        "r": "y=±(3/4)x",
+        "opciones": [
+          "Sí",
+          "x²/25−y²/144=1",
+          "y=±(3/4)x",
+          "e=5/3"
+        ],
+        "correcta": 2
+      },
+      {
+        "p": "Centro de (x−1)²/4−(y+2)²/9=1",
+        "r": "(1,−2)",
+        "opciones": [
+          "Sí",
+          "(±5, 0)",
+          "(1,−2)",
+          "x²/25−y²/144=1"
+        ],
+        "correcta": 2
+      },
+      {
+        "p": "Excentricidad de x²/9−y²/16=1",
+        "r": "e=5/3",
+        "opciones": [
+          "y=±(3/4)x",
+          "e=5/3",
+          "Sí",
+          "x²/25−y²/144=1"
+        ],
+        "correcta": 1
+      },
+      {
+        "p": "Ecuación con a=5, b=12, eje transverso x, centro origen",
+        "r": "x²/25−y²/144=1",
+        "opciones": [
+          "a=4, b=3",
+          "y=±(3/4)x",
+          "x²/25−y²/144=1",
+          "(±5, 0)"
+        ],
+        "correcta": 2
+      },
+      {
+        "p": "Vértices de y²/25−x²/9=1 (eje transverso vertical)",
+        "r": "(0,±5)",
+        "opciones": [
+          "y=±(3/4)x",
+          "c=5",
+          "x²/25−y²/144=1",
+          "(0,±5)"
+        ],
+        "correcta": 3
+      },
+      {
+        "p": "¿(5,0) es vértice de x²/25−y²/4=1?",
+        "r": "Sí",
+        "opciones": [
+          "y=±(3/4)x",
+          "(1,−2)",
+          "Sí",
+          "x²/25−y²/144=1"
+        ],
+        "correcta": 2
+      },
+      {
+        "p": "Encuentra c de y²/4−x²/12=1",
+        "r": "c=4",
+        "opciones": [
+          "c=5",
+          "c=4",
+          "(0,±5)",
+          "a=4, b=3"
+        ],
+        "correcta": 1
+      }
+    ]
+  },
+  {
+    "n": 14,
+    "titulo": "Ecuación general de segundo grado",
+    "puntos": [
+      "Forma general: Ax²+Bxy+Cy²+Dx+Ey+F=0.",
+      "Si B=0, identifica la cónica comparando A y C: A=C → circunferencia; A≠C mismo signo → elipse; signos opuestos → hipérbola; A=0 o C=0 → parábola.",
+      "La traslación de ejes (completar el cuadrado) permite hallar el centro o vértice de la cónica."
+    ],
+    "ejercicios": [
+      {
+        "p": "Identifica la cónica: x²+y²−4x+6y−3=0",
+        "r": "Circunferencia",
+        "opciones": [
+          "Hipérbola",
+          "Circunferencia degenerada (un punto)",
+          "Circunferencia",
+          "Elipse"
+        ],
+        "correcta": 2
+      },
+      {
+        "p": "Identifica la cónica: 4x²+9y²−16x−18y−11=0",
+        "r": "Elipse",
+        "opciones": [
+          "centro(−4,1), r=3",
+          "vértice(3,1)",
+          "Circunferencia degenerada (un punto)",
+          "Elipse"
+        ],
+        "correcta": 3
+      },
+      {
+        "p": "Identifica la cónica: y²−4x−6y+13=0",
+        "r": "Parábola",
+        "opciones": [
+          "Hipérbola",
+          "centro(−4,1), r=3",
+          "Parábola",
+          "Circunferencia"
+        ],
+        "correcta": 2
+      },
+      {
+        "p": "Identifica la cónica: 9x²−4y²−36x−8y−4=0",
+        "r": "Hipérbola",
+        "opciones": [
+          "Parábola",
+          "Circunferencia (x²+y²=4)",
+          "vértice(3,1)",
+          "Hipérbola"
+        ],
+        "correcta": 3
+      },
+      {
+        "p": "Completa el cuadrado y halla el centro de x²+y²+8x−2y+8=0",
+        "r": "centro(−4,1), r=3",
+        "opciones": [
+          "Hipérbola",
+          "centro(−4,1), r=3",
+          "Elipse",
+          "Circunferencia (x²+y²=4)"
+        ],
+        "correcta": 1
+      },
+      {
+        "p": "Identifica: x²−y²=4",
+        "r": "Hipérbola",
+        "opciones": [
+          "Circunferencia",
+          "Circunferencia (x²+y²=4)",
+          "Elipse",
+          "Hipérbola"
+        ],
+        "correcta": 3
+      },
+      {
+        "p": "Identifica: x²+4y²=16",
+        "r": "Elipse",
+        "opciones": [
+          "Circunferencia (x²+y²=4)",
+          "Parábola",
+          "Circunferencia",
+          "Elipse"
+        ],
+        "correcta": 3
+      },
+      {
+        "p": "Identifica: x²+y²=0",
+        "r": "Circunferencia degenerada (un punto)",
+        "opciones": [
+          "Parábola",
+          "Circunferencia degenerada (un punto)",
+          "centro(−4,1), r=3",
+          "vértice(3,1)"
+        ],
+        "correcta": 1
+      },
+      {
+        "p": "Traslada ejes y halla el vértice de x²−6x+8y+1=0",
+        "r": "vértice(3,1)",
+        "opciones": [
+          "vértice(3,1)",
+          "centro(−4,1), r=3",
+          "Circunferencia degenerada (un punto)",
+          "Elipse"
+        ],
+        "correcta": 0
+      },
+      {
+        "p": "Identifica la cónica: 2x²+2y²−8=0",
+        "r": "Circunferencia (x²+y²=4)",
+        "opciones": [
+          "vértice(3,1)",
+          "Circunferencia (x²+y²=4)",
+          "Elipse",
+          "centro(−4,1), r=3"
+        ],
+        "correcta": 1
+      }
+    ]
+  },
+  {
+    "n": 15,
+    "titulo": "Límites",
+    "puntos": [
+      "Concepto intuitivo: valor al que se aproxima f(x) cuando x se acerca a un valor a.",
+      "Teoremas de límites: de suma, producto y cociente (si el denominador no tiende a 0), y de constantes.",
+      "Formas indeterminadas (0/0, ∞/∞): se resuelven factorizando, racionalizando o simplificando antes de sustituir.",
+      "Continuidad en x=a requiere: que f(a) exista, que el límite exista, y que ambos sean iguales."
+    ],
+    "ejercicios": [
+      {
+        "p": "Calcula lim(x→2) (x²+3x−1)",
+        "r": "9",
+        "opciones": [
+          "9",
+          "2",
+          "0",
+          "No (no está definida ahí)"
+        ],
+        "correcta": 0
+      },
+      {
+        "p": "Calcula lim(x→3) (x²−9)/(x−3)",
+        "r": "6",
+        "opciones": [
+          "No (no está definida ahí)",
+          "6",
+          "0",
+          "3"
+        ],
+        "correcta": 1
+      },
+      {
+        "p": "Calcula lim(x→0) (senx)/x",
+        "r": "1",
+        "opciones": [
+          "3",
+          "1",
+          "2",
+          "0"
+        ],
+        "correcta": 1
+      },
+      {
+        "p": "Calcula lim(x→∞) (3x²+2)/(x²−5)",
+        "r": "3",
+        "opciones": [
+          "No (no está definida ahí)",
+          "1",
+          "1",
+          "3"
+        ],
+        "correcta": 3
+      },
+      {
+        "p": "Calcula lim(x→1) (x³−1)/(x−1)",
+        "r": "3",
+        "opciones": [
+          "3",
+          "No (no está definida ahí)",
+          "0",
+          "1"
+        ],
+        "correcta": 0
+      },
+      {
+        "p": "Calcula lim(x→4) √x",
+        "r": "2",
+        "opciones": [
+          "1",
+          "2",
+          "3",
+          "0"
+        ],
+        "correcta": 1
+      },
+      {
+        "p": "¿f(x)=(x²−4)/(x−2) es continua en x=2?",
+        "r": "No (no está definida ahí)",
+        "opciones": [
+          "3",
+          "2",
+          "No (no está definida ahí)",
+          "3"
+        ],
+        "correcta": 2
+      },
+      {
+        "p": "Calcula lim(x→0) (1−cosx)/x",
+        "r": "0",
+        "opciones": [
+          "9",
+          "No (no está definida ahí)",
+          "0",
+          "2"
+        ],
+        "correcta": 2
+      },
+      {
+        "p": "Calcula lim(x→−2) (x²+5x+6)/(x+2)",
+        "r": "1",
+        "opciones": [
+          "0",
+          "1",
+          "No (no está definida ahí)",
+          "3"
+        ],
+        "correcta": 1
+      },
+      {
+        "p": "Calcula lim(x→∞) 5/x",
+        "r": "0",
+        "opciones": [
+          "9",
+          "0",
+          "2",
+          "No (no está definida ahí)"
+        ],
+        "correcta": 1
+      }
+    ]
+  },
+  {
+    "n": 16,
+    "titulo": "La derivada",
+    "puntos": [
+      "Definición: f'(x) = lim(h→0) [f(x+h)−f(x)]/h. Representa la pendiente de la recta tangente.",
+      "Reglas básicas: d/dx(xⁿ)=nxⁿ⁻¹; regla del producto (uv)'=u'v+uv'; regla del cociente (u/v)'=(u'v−uv')/v²; regla de la cadena (f(g(x)))'=f'(g(x))·g'(x).",
+      "Derivación implícita: deriva ambos lados respecto a x tratando y como función de x.",
+      "Interpretación física: la derivada de la posición es velocidad; la derivada de la velocidad es aceleración.",
+      "Máximos/mínimos relativos: donde f'(x)=0 y cambia de signo (o f''(x)≠0). Puntos de inflexión: donde f''(x) cambia de signo."
+    ],
+    "ejercicios": [
+      {
+        "p": "Deriva f(x)=x³−4x²+2x−1",
+        "r": "f'=3x²−8x+2",
+        "opciones": [
+          "f''=12x²−6",
+          "f'=3x²−8x+2",
+          "y=4x−4",
+          "x=−1, x=1"
+        ],
+        "correcta": 1
+      },
+      {
+        "p": "Deriva f(x)=(x²+1)(x−3)",
+        "r": "f'=3x²−6x+1",
+        "opciones": [
+          "f'=3x²−8x+2",
+          "y=4x−4",
+          "dy/dx = −x/y",
+          "f'=3x²−6x+1"
+        ],
+        "correcta": 3
+      },
+      {
+        "p": "Deriva f(x)=(2x+1)/(x−1)",
+        "r": "f'=−3/(x−1)²",
+        "opciones": [
+          "f'=30x(3x²−1)⁴",
+          "f'=3x²−8x+2",
+          "dy/dx = −x/y",
+          "f'=−3/(x−1)²"
+        ],
+        "correcta": 3
+      },
+      {
+        "p": "Deriva f(x)=(3x²−1)⁵",
+        "r": "f'=30x(3x²−1)⁴",
+        "opciones": [
+          "f'=30x(3x²−1)⁴",
+          "f'=3x²−6x+1",
+          "f'=−3/(x−1)²",
+          "dy/dx = −x/y"
+        ],
+        "correcta": 0
+      },
+      {
+        "p": "Deriva implícitamente x²+y²=25 y halla dy/dx",
+        "r": "dy/dx = −x/y",
+        "opciones": [
+          "x=−1 máximo relativo (2); x=1 mínimo relativo (−2)",
+          "f'=3x²−6x+1",
+          "dy/dx = −x/y",
+          "f''=12x²−6"
+        ],
+        "correcta": 2
+      },
+      {
+        "p": "Encuentra f''(x) de f(x)=x⁴−3x²",
+        "r": "f''=12x²−6",
+        "opciones": [
+          "f'=3x²−8x+2",
+          "f''=12x²−6",
+          "y=4x−4",
+          "x=−1 máximo relativo (2); x=1 mínimo relativo (−2)"
+        ],
+        "correcta": 1
+      },
+      {
+        "p": "Ecuación de la tangente a f(x)=x² en x=2",
+        "r": "y=4x−4",
+        "opciones": [
+          "f'=−3/(x−1)²",
+          "f''=12x²−6",
+          "f'=30x(3x²−1)⁴",
+          "y=4x−4"
+        ],
+        "correcta": 3
+      },
+      {
+        "p": "s(t)=t³−6t²+9t. Encuentra la velocidad en t=2",
+        "r": "v(2)=−3",
+        "opciones": [
+          "f'=30x(3x²−1)⁴",
+          "x=−1, x=1",
+          "v(2)=−3",
+          "f'=3x²−6x+1"
+        ],
+        "correcta": 2
+      },
+      {
+        "p": "Puntos críticos de f(x)=x³−3x",
+        "r": "x=−1, x=1",
+        "opciones": [
+          "f'=30x(3x²−1)⁴",
+          "f'=3x²−6x+1",
+          "x=−1, x=1",
+          "f'=−3/(x−1)²"
+        ],
+        "correcta": 2
+      },
+      {
+        "p": "Clasifica los puntos críticos anteriores",
+        "r": "x=−1 máximo relativo (2); x=1 mínimo relativo (−2)",
+        "opciones": [
+          "f''=12x²−6",
+          "f'=3x²−6x+1",
+          "x=−1, x=1",
+          "x=−1 máximo relativo (2); x=1 mínimo relativo (−2)"
+        ],
+        "correcta": 3
+      }
+    ]
+  },
+  {
+    "n": 17,
+    "titulo": "La integral",
+    "puntos": [
+      "Integral indefinida (antiderivada): ∫xⁿdx = xⁿ⁺¹/(n+1)+C (n≠−1); ∫(1/x)dx=ln|x|+C; ∫eˣdx=eˣ+C; ∫senx dx=−cosx+C; ∫cosx dx=senx+C.",
+      "Propiedades: ∫[f±g]dx=∫f dx±∫g dx; ∫k·f dx=k∫f dx.",
+      "Métodos: sustitución (cambio de variable) y por partes: ∫u dv = uv − ∫v du.",
+      "Integral definida: ∫[a,b] f(x)dx = F(b)−F(a) (Teorema Fundamental del Cálculo); representa el área bajo la curva."
+    ],
+    "ejercicios": [
+      {
+        "p": "Calcula ∫(3x²−2x+5)dx",
+        "r": "x³−x²+5x+C",
+        "opciones": [
+          "x³−x²+5x+C",
+          "(2/3)x^(3/2)+C",
+          "x⁴−ln|x|+C",
+          "(x²+1)⁴/8+C"
+        ],
+        "correcta": 0
+      },
+      {
+        "p": "Calcula ∫(4x³−1/x)dx",
+        "r": "x⁴−ln|x|+C",
+        "opciones": [
+          "x·senx + cosx + C",
+          "x³−x²+5x+C",
+          "x⁴−ln|x|+C",
+          "(2/3)x^(3/2)+C"
+        ],
+        "correcta": 2
+      },
+      {
+        "p": "Calcula ∫e^(2x)dx",
+        "r": "(1/2)e^(2x)+C",
+        "opciones": [
+          "(x²+1)⁴/8+C",
+          "(1/2)e^(2x)+C",
+          "x·senx + cosx + C",
+          "−cos(3x)/3+C"
+        ],
+        "correcta": 1
+      },
+      {
+        "p": "Calcula ∫x(x²+1)³dx (sustitución u=x²+1)",
+        "r": "(x²+1)⁴/8+C",
+        "opciones": [
+          "(x²+1)⁴/8+C",
+          "−cos(3x)/3+C",
+          "(2/3)x^(3/2)+C",
+          "10"
+        ],
+        "correcta": 0
+      },
+      {
+        "p": "Calcula ∫x·cos(x)dx (por partes)",
+        "r": "x·senx + cosx + C",
+        "opciones": [
+          "x⁴−ln|x|+C",
+          "(1/2)e^(2x)+C",
+          "10",
+          "x·senx + cosx + C"
+        ],
+        "correcta": 3
+      },
+      {
+        "p": "Evalúa ∫[0,2] x²dx",
+        "r": "8/3",
+        "opciones": [
+          "−cos(3x)/3+C",
+          "x⁴−ln|x|+C",
+          "10",
+          "8/3"
+        ],
+        "correcta": 3
+      },
+      {
+        "p": "Evalúa ∫[1,3] (2x+1)dx",
+        "r": "10",
+        "opciones": [
+          "(2/3)x^(3/2)+C",
+          "−cos(3x)/3+C",
+          "8/3",
+          "10"
+        ],
+        "correcta": 3
+      },
+      {
+        "p": "Calcula ∫sen(3x)dx",
+        "r": "−cos(3x)/3+C",
+        "opciones": [
+          "−cos(3x)/3+C",
+          "x·senx + cosx + C",
+          "(1/2)e^(2x)+C",
+          "x⁴−ln|x|+C"
+        ],
+        "correcta": 0
+      },
+      {
+        "p": "Calcula ∫√x dx",
+        "r": "(2/3)x^(3/2)+C",
+        "opciones": [
+          "(x²+1)⁴/8+C",
+          "−cos(3x)/3+C",
+          "(2/3)x^(3/2)+C",
+          "10"
+        ],
+        "correcta": 2
+      },
+      {
+        "p": "Evalúa ∫[0,π] senx dx",
+        "r": "2",
+        "opciones": [
+          "8/3",
+          "10",
+          "2",
+          "x⁴−ln|x|+C"
+        ],
+        "correcta": 2
+      }
+    ]
+  }
+];

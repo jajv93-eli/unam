@@ -6,7 +6,7 @@
   const temas = window.TEMAS || [];
   const subjectLabel = window.SUBJECT_LABEL || "Materia";
   let current = 0;
-  const solved = temas.map(() => new Set());
+  const solved = temas.map(() => new Map()); // índice ejercicio -> índice opción elegida
 
   function renderSidebar() {
     const sb = document.getElementById("sidebar");
@@ -44,6 +44,12 @@
     progWrap.className = "progress-wrap";
     const totalEj = temas.reduce((a, t) => a + t.ejercicios.length, 0);
     const doneEj = solved.reduce((a, s) => a + s.size, 0);
+    let correctEj = 0;
+    solved.forEach((map, ti) => {
+      map.forEach((chosenIdx, ej) => {
+        if (chosenIdx === temas[ti].ejercicios[ej].correcta) correctEj++;
+      });
+    });
     const pct = totalEj ? Math.round((doneEj / totalEj) * 100) : 0;
     progWrap.innerHTML =
       '<div class="progress-label">Progreso de repaso</div>' +
@@ -54,7 +60,9 @@
       doneEj +
       " / " +
       totalEj +
-      " ejercicios revisados</div>";
+      " respondidos · " +
+      correctEj +
+      " correctos</div>";
     sb.appendChild(progWrap);
 
     const back = document.createElement("a");
@@ -104,34 +112,58 @@
       card.className = "ejercicio" + (solved[current].has(i) ? " solved" : "");
       card.id = "ej-" + i;
 
-      const row = document.createElement("div");
-      row.className = "ej-row";
       const enun = document.createElement("div");
       enun.className = "ej-enun";
       enun.innerHTML = '<span class="ej-num">' + (i + 1) + ".</span>" + ej.p;
-      const btn = document.createElement("button");
-      btn.className = "toggle-btn";
-      btn.textContent = solved[current].has(i) ? "Ocultar" : "Ver respuesta";
-      btn.onclick = () => {
-        const respDiv = card.querySelector(".respuesta");
-        const isShown = respDiv.classList.toggle("show");
-        if (isShown) {
-          solved[current].add(i);
-          card.classList.add("solved");
-          btn.textContent = "Ocultar";
-        } else {
-          btn.textContent = "Ver respuesta";
-        }
-        renderSidebar();
-      };
-      row.appendChild(enun);
-      row.appendChild(btn);
-      card.appendChild(row);
+      card.appendChild(enun);
 
-      const resp = document.createElement("div");
-      resp.className = "respuesta";
-      resp.innerHTML = "<b>Respuesta —</b> " + ej.r;
-      card.appendChild(resp);
+      const ul = document.createElement("div");
+      ul.className = "opciones";
+      const letras = ["A", "B", "C", "D"];
+      const feedback = document.createElement("div");
+
+      function paintButtons(selectedIdx) {
+        Array.from(ul.children).forEach((btn, oi) => {
+          btn.disabled = true;
+          if (oi === ej.correcta) {
+            btn.classList.add("correct");
+          } else if (oi === selectedIdx) {
+            btn.classList.add("incorrect");
+          } else {
+            btn.classList.add("faded");
+          }
+        });
+      }
+
+      ej.opciones.forEach((opt, oi) => {
+        const btn = document.createElement("button");
+        btn.className = "opcion-btn";
+        btn.innerHTML =
+          '<span class="opcion-letra">' + letras[oi] + ".</span><span>" + opt + "</span>";
+        btn.onclick = () => {
+          solved[current].set(i, oi);
+          card.classList.add("solved");
+          paintButtons(oi);
+          feedback.className =
+            "feedback-line " + (oi === ej.correcta ? "correct" : "incorrect");
+          feedback.textContent =
+            oi === ej.correcta ? "✓ Correcto" : "✗ Incorrecto — la respuesta correcta está marcada";
+          renderSidebar();
+        };
+        ul.appendChild(btn);
+      });
+
+      if (solved[current].has(i)) {
+        const chosen = solved[current].get(i);
+        paintButtons(chosen);
+        feedback.className =
+          "feedback-line " + (chosen === ej.correcta ? "correct" : "incorrect");
+        feedback.textContent =
+          chosen === ej.correcta ? "✓ Correcto" : "✗ Incorrecto — la respuesta correcta está marcada";
+      }
+
+      card.appendChild(ul);
+      card.appendChild(feedback);
 
       m.appendChild(card);
     });
@@ -163,7 +195,7 @@
     foot.textContent =
       "Guía basada en el temario oficial de " +
       subjectLabel +
-      " para el examen de selección UNAM. Resuelve cada ejercicio antes de revelar la respuesta para aprovechar mejor el repaso.";
+      " para el examen de selección UNAM. Elige la opción que consideres correcta en cada ejercicio para recibir retroalimentación inmediata.";
     m.appendChild(foot);
   }
 

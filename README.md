@@ -21,9 +21,19 @@ data/
 1. Crea `data/<materia>.js` con el mismo formato que los existentes:
    ```js
    const TEMAS = [
-     { n: 1, titulo: "...", puntos: ["..."], ejercicios: [{ p: "...", r: "..." }] }
+     { n: 1, titulo: "...", puntos: ["..."], ejercicios: [
+       { p: "Pregunta...", r: "Respuesta correcta", opciones: ["op A","op B","op C","op D"], correcta: 2 }
+     ] }
    ];
    ```
+   `correcta` es el índice (0 a 3) de la opción correcta dentro de `opciones`.
+
+   Si prefieres no escribir las opciones a mano, deja solo `p` y `r` en cada ejercicio y corre:
+   ```bash
+   node scripts/generate_choices.js
+   ```
+   Este script arma automáticamente 4 opciones por ejercicio (la respuesta correcta + 3 distractores tomados de otras respuestas del mismo tema) y agrega `opciones` y `correcta` a cada archivo en `data/`.
+
 2. Crea `<materia>.html` copiando `espanol.html` y cambiando el título, el `src` del script de datos y `window.SUBJECT_LABEL`.
 3. Agrega una tarjeta enlazando a esa página en `index.html`.
 
