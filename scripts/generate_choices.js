@@ -7,7 +7,8 @@ const files = [
   "espanol.js",
   "fisica.js",
   "quimica.js",
-  "biologia.js"
+  "biologia.js",
+  "historia-universal.js"
 ];
 
 function shuffle(arr) {
