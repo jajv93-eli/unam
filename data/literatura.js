@@ -1,5 +1,7 @@
 // Datos: Guía de literatura — Examen de ingreso a licenciatura UNAM
-// Cada ejercicio incluye "opciones" (4 respuestas) y "correcta" (índice de la respuesta correcta)
+// Cada tema incluye "datosClave" (fechas, nombres, fórmulas para repaso rápido).
+// Cada ejercicio incluye "opciones" (4 respuestas) y "correcta" (índice de la respuesta correcta).
+(function () {
 const TEMAS = [
   {
     "n": 1,
@@ -122,6 +124,11 @@ const TEMAS = [
         ],
         "correcta": 3
       }
+    ],
+    "datosClave": [
+      "Propósito, adecuación, cabalidad, coherencia",
+      "Pirámide invertida (nota informativa)",
+      "Desarrollo, nudo y desenlace"
     ]
   },
   {
@@ -244,6 +251,11 @@ const TEMAS = [
         ],
         "correcta": 3
       }
+    ],
+    "datosClave": [
+      "Épico · Lírico · Dramático",
+      "Realismo: Balzac, Flaubert, Pérez Galdós",
+      "Contemporánea: García Márquez, Borges, Rulfo"
     ]
   },
   {
@@ -369,6 +381,19 @@ const TEMAS = [
         ],
         "correcta": 1
       }
+    ],
+    "datosClave": [
+      "Resumen · Paráfrasis · Cita textual · Comentario",
+      "Ficha bibliográfica vs. ficha hemerográfica"
     ]
   }
 ];
+
+  if (typeof window !== "undefined") {
+    window.SUBJECT_DATA = window.SUBJECT_DATA || {};
+    window.SUBJECT_DATA["literatura"] = TEMAS;
+  }
+  if (typeof window !== "undefined") {
+    window.__LAST_LOADED_TEMAS__ = TEMAS;
+  }
+})();

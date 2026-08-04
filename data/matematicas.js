@@ -1,5 +1,7 @@
 // Datos: Guía de matematicas — Examen de ingreso a licenciatura UNAM
-// Cada ejercicio incluye "opciones" (4 respuestas) y "correcta" (índice de la respuesta correcta)
+// Cada tema incluye "datosClave" (fechas, nombres, fórmulas para repaso rápido).
+// Cada ejercicio incluye "opciones" (4 respuestas) y "correcta" (índice de la respuesta correcta).
+(function () {
 const TEMAS = [
   {
     "n": 1,
@@ -122,6 +124,13 @@ const TEMAS = [
         ],
         "correcta": 3
       }
+    ],
+    "datosClave": [
+      "i² = −1",
+      "aᵐ·aⁿ = aᵐ⁺ⁿ",
+      "(aᵐ)ⁿ = aᵐⁿ",
+      "a⁻ⁿ = 1/aⁿ",
+      "(a+bi)(c+di) = (ac−bd)+(ad+bc)i"
     ]
   },
   {
@@ -246,6 +255,13 @@ const TEMAS = [
         ],
         "correcta": 3
       }
+    ],
+    "datosClave": [
+      "(a+b)² = a²+2ab+b²",
+      "(a−b)² = a²−2ab+b²",
+      "(a+b)(a−b) = a²−b²",
+      "Teorema del residuo: P(c) = residuo",
+      "Teorema del factor: (x−c) es factor ⟺ P(c)=0"
     ]
   },
   {
@@ -369,6 +385,11 @@ const TEMAS = [
         ],
         "correcta": 1
       }
+    ],
+    "datosClave": [
+      "x = (−b ± √(b²−4ac)) / 2a",
+      "Discriminante = b²−4ac",
+      "Δ>0: 2 raíces reales · Δ=0: 1 raíz doble · Δ<0: raíces complejas"
     ]
   },
   {
@@ -491,6 +512,10 @@ const TEMAS = [
         ],
         "correcta": 2
       }
+    ],
+    "datosClave": [
+      "Multiplicar/dividir por negativo invierte la desigualdad",
+      "Notación de intervalo: [a,b), (a,b], (a,∞)"
     ]
   },
   {
@@ -613,6 +638,10 @@ const TEMAS = [
         ],
         "correcta": 1
       }
+    ],
+    "datosClave": [
+      "Regla de Cramer: xᵢ = det(Aᵢ)/det(A)",
+      "Sistema 2×2: sustitución, igualación o eliminación"
     ]
   },
   {
@@ -737,6 +766,11 @@ const TEMAS = [
         ],
         "correcta": 3
       }
+    ],
+    "datosClave": [
+      "Dominio y rango",
+      "(f+g)(x), (f·g)(x), (f/g)(x)",
+      "(f∘g)(x) = f(g(x))"
     ]
   },
   {
@@ -860,6 +894,12 @@ const TEMAS = [
         ],
         "correcta": 2
       }
+    ],
+    "datosClave": [
+      "rad = grados × π/180",
+      "sen = op/hip · cos = ady/hip · tan = op/ady",
+      "Ley de senos: a/senA = b/senB = c/senC",
+      "Ley de cosenos: c² = a²+b²−2ab·cosC"
     ]
   },
   {
@@ -982,6 +1022,12 @@ const TEMAS = [
         ],
         "correcta": 0
       }
+    ],
+    "datosClave": [
+      "log(ab) = log a + log b",
+      "log(aⁿ) = n·log a",
+      "log_a(x) = ln(x)/ln(a)",
+      "aˣ: asíntota y=0 · log_a(x): asíntota x=0"
     ]
   },
   {
@@ -1106,6 +1152,13 @@ const TEMAS = [
         ],
         "correcta": 0
       }
+    ],
+    "datosClave": [
+      "d = √((x₂−x₁)² + (y₂−y₁)²)",
+      "m = (y₂−y₁)/(x₂−x₁)",
+      "y−y₁ = m(x−x₁)",
+      "Perpendiculares: m₁·m₂ = −1",
+      "d(punto,recta) = |Ax₀+By₀+C|/√(A²+B²)"
     ]
   },
   {
@@ -1229,6 +1282,11 @@ const TEMAS = [
         ],
         "correcta": 3
       }
+    ],
+    "datosClave": [
+      "x² + y² = r²",
+      "(x−h)² + (y−k)² = r²",
+      "Forma general: x²+y²+Dx+Ey+F=0"
     ]
   },
   {
@@ -1351,6 +1409,11 @@ const TEMAS = [
         ],
         "correcta": 3
       }
+    ],
+    "datosClave": [
+      "y² = 4px (vértice en origen, eje x)",
+      "(y−k)² = 4p(x−h)",
+      "Lado recto = |4p|"
     ]
   },
   {
@@ -1474,6 +1537,11 @@ const TEMAS = [
         ],
         "correcta": 0
       }
+    ],
+    "datosClave": [
+      "x²/a² + y²/b² = 1",
+      "a² = b² + c²",
+      "Excentricidad e = c/a  (0<e<1)"
     ]
   },
   {
@@ -1597,6 +1665,12 @@ const TEMAS = [
         ],
         "correcta": 1
       }
+    ],
+    "datosClave": [
+      "x²/a² − y²/b² = 1",
+      "c² = a² + b²",
+      "Asíntotas: y = ±(b/a)x",
+      "Excentricidad e = c/a  (e>1)"
     ]
   },
   {
@@ -1718,6 +1792,12 @@ const TEMAS = [
         ],
         "correcta": 1
       }
+    ],
+    "datosClave": [
+      "Ax²+Bxy+Cy²+Dx+Ey+F=0",
+      "A=C → circunferencia",
+      "A≠C mismo signo → elipse",
+      "signos opuestos → hipérbola"
     ]
   },
   {
@@ -1840,6 +1920,11 @@ const TEMAS = [
         ],
         "correcta": 1
       }
+    ],
+    "datosClave": [
+      "lim(x→0) senx/x = 1",
+      "Formas indeterminadas: 0/0, ∞/∞",
+      "Continuidad: f(a) existe, lim existe, y son iguales"
     ]
   },
   {
@@ -1963,6 +2048,13 @@ const TEMAS = [
         ],
         "correcta": 3
       }
+    ],
+    "datosClave": [
+      "f'(x) = lim(h→0) [f(x+h)−f(x)]/h",
+      "d/dx(xⁿ) = nxⁿ⁻¹",
+      "(uv)' = u'v+uv'",
+      "(u/v)' = (u'v−uv')/v²",
+      "Regla de la cadena: f'(g(x))·g'(x)"
     ]
   },
   {
@@ -2085,6 +2177,21 @@ const TEMAS = [
         ],
         "correcta": 2
       }
+    ],
+    "datosClave": [
+      "∫xⁿdx = xⁿ⁺¹/(n+1) + C",
+      "∫eˣdx = eˣ + C",
+      "∫senx dx = −cosx + C",
+      "∫[a,b] f(x)dx = F(b)−F(a)"
     ]
   }
 ];
+
+  if (typeof window !== "undefined") {
+    window.SUBJECT_DATA = window.SUBJECT_DATA || {};
+    window.SUBJECT_DATA["matematicas"] = TEMAS;
+  }
+  if (typeof window !== "undefined") {
+    window.__LAST_LOADED_TEMAS__ = TEMAS;
+  }
+})();

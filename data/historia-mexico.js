@@ -1,5 +1,7 @@
 // Datos: Guía de historia-mexico — Examen de ingreso a licenciatura UNAM
-// Cada ejercicio incluye "opciones" (4 respuestas) y "correcta" (índice de la respuesta correcta)
+// Cada tema incluye "datosClave" (fechas, nombres, fórmulas para repaso rápido).
+// Cada ejercicio incluye "opciones" (4 respuestas) y "correcta" (índice de la respuesta correcta).
+(function () {
 const TEMAS = [
   {
     "n": 1,
@@ -123,6 +125,11 @@ const TEMAS = [
         ],
         "correcta": 2
       }
+    ],
+    "datosClave": [
+      "1521 — Caída de Tenochtitlan",
+      "Hernán Cortés",
+      "Reformas Borbónicas (siglo XVIII)"
     ]
   },
   {
@@ -246,6 +253,12 @@ const TEMAS = [
         ],
         "correcta": 0
       }
+    ],
+    "datosClave": [
+      "1810 — Grito de Dolores (Miguel Hidalgo)",
+      "José María Morelos — Congreso de Chilpancingo",
+      "Vicente Guerrero",
+      "1821 — Plan de Iguala (Agustín de Iturbide)"
     ]
   },
   {
@@ -368,6 +381,12 @@ const TEMAS = [
         ],
         "correcta": 1
       }
+    ],
+    "datosClave": [
+      "1836 — Independencia de Texas",
+      "1838 — Guerra de los Pasteles",
+      "1846-1848 — Guerra con Estados Unidos",
+      "Tratado de Guadalupe Hidalgo"
     ]
   },
   {
@@ -491,6 +510,14 @@ const TEMAS = [
         ],
         "correcta": 3
       }
+    ],
+    "datosClave": [
+      "1854 — Revolución de Ayutla",
+      "1857 — Constitución liberal",
+      "Benito Juárez — Leyes de Reforma",
+      "1862-1867 — Intervención francesa",
+      "Maximiliano de Habsburgo",
+      "Sebastián Lerdo de Tejada"
     ]
   },
   {
@@ -614,6 +641,12 @@ const TEMAS = [
         ],
         "correcta": 1
       }
+    ],
+    "datosClave": [
+      "1876-1911 — Porfiriato",
+      "Porfirio Díaz",
+      "Huelgas de Cananea y Río Blanco",
+      "Francisco I. Madero"
     ]
   },
   {
@@ -737,6 +770,12 @@ const TEMAS = [
         ],
         "correcta": 2
       }
+    ],
+    "datosClave": [
+      "1910 — Plan de San Luis (Madero)",
+      "1913 — Decena Trágica",
+      "Venustiano Carranza · Pancho Villa · Emiliano Zapata",
+      "1917 — Constitución (Querétaro), artículos 27 y 123"
     ]
   },
   {
@@ -858,6 +897,12 @@ const TEMAS = [
         ],
         "correcta": 3
       }
+    ],
+    "datosClave": [
+      "1929 — Fundación del PNR",
+      "Plutarco Elías Calles — Maximato (1928-1934)",
+      "Lázaro Cárdenas (1934-1940)",
+      "1938 — Expropiación petrolera"
     ]
   },
   {
@@ -980,6 +1025,21 @@ const TEMAS = [
         ],
         "correcta": 2
       }
+    ],
+    "datosClave": [
+      "1940-1952 — Unidad Nacional",
+      "1952-1970 — \"Milagro mexicano\"",
+      "1970-1982 — Desarrollo compartido",
+      "1994 — TLCAN"
     ]
   }
 ];
+
+  if (typeof window !== "undefined") {
+    window.SUBJECT_DATA = window.SUBJECT_DATA || {};
+    window.SUBJECT_DATA["historia-mexico"] = TEMAS;
+  }
+  if (typeof window !== "undefined") {
+    window.__LAST_LOADED_TEMAS__ = TEMAS;
+  }
+})();

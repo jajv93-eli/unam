@@ -1,5 +1,7 @@
 // Datos: Guía de fisica — Examen de ingreso a licenciatura UNAM
-// Cada ejercicio incluye "opciones" (4 respuestas) y "correcta" (índice de la respuesta correcta)
+// Cada tema incluye "datosClave" (fechas, nombres, fórmulas para repaso rápido).
+// Cada ejercicio incluye "opciones" (4 respuestas) y "correcta" (índice de la respuesta correcta).
+(function () {
 const TEMAS = [
   {
     "n": 1,
@@ -121,6 +123,13 @@ const TEMAS = [
         ],
         "correcta": 2
       }
+    ],
+    "datosClave": [
+      "v = d/t",
+      "v = v₀ + at",
+      "d = v₀t + ½at²",
+      "v² = v₀² + 2ad",
+      "g ≈ 9.8 m/s²"
     ]
   },
   {
@@ -245,6 +254,13 @@ const TEMAS = [
         ],
         "correcta": 3
       }
+    ],
+    "datosClave": [
+      "F = ma",
+      "Peso = mg",
+      "F = kx (Ley de Hooke)",
+      "F = G·m₁m₂/r²",
+      "G = 6.674×10⁻¹¹ N·m²/kg²"
     ]
   },
   {
@@ -369,6 +385,13 @@ const TEMAS = [
         ],
         "correcta": 2
       }
+    ],
+    "datosClave": [
+      "W = F·d·cosθ",
+      "P = W/t",
+      "Ec = ½mv²",
+      "Ep = mgh",
+      "p = mv"
     ]
   },
   {
@@ -493,6 +516,12 @@ const TEMAS = [
         ],
         "correcta": 1
       }
+    ],
+    "datosClave": [
+      "K = °C + 273",
+      "Q = mcΔT",
+      "ΔU = Q − W",
+      "PV = nRT"
     ]
   },
   {
@@ -616,6 +645,11 @@ const TEMAS = [
         ],
         "correcta": 2
       }
+    ],
+    "datosClave": [
+      "v = λf",
+      "T = 1/f",
+      "Energía ∝ amplitud²"
     ]
   },
   {
@@ -740,6 +774,12 @@ const TEMAS = [
         ],
         "correcta": 2
       }
+    ],
+    "datosClave": [
+      "F = k·q₁q₂/r²",
+      "k = 9×10⁹ N·m²/C²",
+      "V = IR",
+      "P = VI = I²R"
     ]
   },
   {
@@ -864,6 +904,12 @@ const TEMAS = [
         ],
         "correcta": 3
       }
+    ],
+    "datosClave": [
+      "P = F/A",
+      "P = ρgh",
+      "Bernoulli: P + ½ρv² + ρgh = cte",
+      "Continuidad: A₁v₁ = A₂v₂"
     ]
   },
   {
@@ -986,6 +1032,11 @@ const TEMAS = [
         ],
         "correcta": 0
       }
+    ],
+    "datosClave": [
+      "Ángulo de incidencia = ángulo de reflexión",
+      "Lentes convergentes / divergentes",
+      "Dualidad onda-partícula"
     ]
   },
   {
@@ -1110,6 +1161,20 @@ const TEMAS = [
         ],
         "correcta": 0
       }
+    ],
+    "datosClave": [
+      "Rutherford → núcleo atómico",
+      "Bohr → órbitas cuantizadas",
+      "Partículas alfa, beta y gamma"
     ]
   }
 ];
+
+  if (typeof window !== "undefined") {
+    window.SUBJECT_DATA = window.SUBJECT_DATA || {};
+    window.SUBJECT_DATA["fisica"] = TEMAS;
+  }
+  if (typeof window !== "undefined") {
+    window.__LAST_LOADED_TEMAS__ = TEMAS;
+  }
+})();

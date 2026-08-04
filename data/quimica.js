@@ -1,5 +1,7 @@
 // Datos: Guía de quimica — Examen de ingreso a licenciatura UNAM
-// Cada ejercicio incluye "opciones" (4 respuestas) y "correcta" (índice de la respuesta correcta)
+// Cada tema incluye "datosClave" (fechas, nombres, fórmulas para repaso rápido).
+// Cada ejercicio incluye "opciones" (4 respuestas) y "correcta" (índice de la respuesta correcta).
+(function () {
 const TEMAS = [
   {
     "n": 1,
@@ -125,6 +127,12 @@ const TEMAS = [
         ],
         "correcta": 2
       }
+    ],
+    "datosClave": [
+      "Z = número de protones",
+      "masa atómica ≈ protones + neutrones",
+      "Número de Avogadro = 6.022×10²³",
+      "Regla del octeto = 8 electrones de valencia"
     ]
   },
   {
@@ -249,6 +257,11 @@ const TEMAS = [
         ],
         "correcta": 1
       }
+    ],
+    "datosClave": [
+      "pH = −log[H⁺]",
+      "pH<7 ácido · pH=7 neutro · pH>7 básico",
+      "M = mol de soluto / L de disolución"
     ]
   },
   {
@@ -373,6 +386,11 @@ const TEMAS = [
         ],
         "correcta": 0
       }
+    ],
+    "datosClave": [
+      "N₂ ≈ 78% del aire",
+      "O₂ ≈ 21% del aire",
+      "C + O₂ → CO₂"
     ]
   },
   {
@@ -495,6 +513,11 @@ const TEMAS = [
         ],
         "correcta": 0
       }
+    ],
+    "datosClave": [
+      "Carbohidratos: energía inmediata",
+      "Lípidos: energía de reserva",
+      "Proteínas: aminoácidos + enlace peptídico"
     ]
   },
   {
@@ -618,6 +641,11 @@ const TEMAS = [
         ],
         "correcta": 1
       }
+    ],
+    "datosClave": [
+      "ΔH < 0 → exotérmica",
+      "ΔG < 0 → espontánea",
+      "Ley de Le Chatelier"
     ]
   },
   {
@@ -741,6 +769,21 @@ const TEMAS = [
         ],
         "correcta": 2
       }
+    ],
+    "datosClave": [
+      "Alcanos: -ano (enlace simple)",
+      "Alquenos: -eno (doble enlace)",
+      "Alquinos: -ino (triple enlace)",
+      "–OH alcohol · –COOH ácido carboxílico"
     ]
   }
 ];
+
+  if (typeof window !== "undefined") {
+    window.SUBJECT_DATA = window.SUBJECT_DATA || {};
+    window.SUBJECT_DATA["quimica"] = TEMAS;
+  }
+  if (typeof window !== "undefined") {
+    window.__LAST_LOADED_TEMAS__ = TEMAS;
+  }
+})();

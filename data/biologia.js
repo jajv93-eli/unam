@@ -1,5 +1,7 @@
 // Datos: Guía de biologia — Examen de ingreso a licenciatura UNAM
-// Cada ejercicio incluye "opciones" (4 respuestas) y "correcta" (índice de la respuesta correcta)
+// Cada tema incluye "datosClave" (fechas, nombres, fórmulas para repaso rápido).
+// Cada ejercicio incluye "opciones" (4 respuestas) y "correcta" (índice de la respuesta correcta).
+(function () {
 const TEMAS = [
   {
     "n": 1,
@@ -122,6 +124,11 @@ const TEMAS = [
         ],
         "correcta": 1
       }
+    ],
+    "datosClave": [
+      "Robert Hooke (1665)",
+      "Núcleo · Mitocondria · Ribosoma · Cloroplasto",
+      "Procariota (sin núcleo) vs. eucariota (con núcleo)"
     ]
   },
   {
@@ -245,6 +252,11 @@ const TEMAS = [
         ],
         "correcta": 1
       }
+    ],
+    "datosClave": [
+      "Glucólisis: 2 ATP netos",
+      "Respiración aerobia: 36–38 ATP",
+      "ATP y NADPH"
     ]
   },
   {
@@ -368,6 +380,11 @@ const TEMAS = [
         ],
         "correcta": 0
       }
+    ],
+    "datosClave": [
+      "Mitosis → 2 células idénticas",
+      "Meiosis → 4 células, mitad de cromosomas",
+      "ADN (doble hélice) y ARN"
     ]
   },
   {
@@ -491,6 +508,11 @@ const TEMAS = [
         ],
         "correcta": 0
       }
+    ],
+    "datosClave": [
+      "Mendel — experimentos con chícharos",
+      "Ley de la Segregación",
+      "Ley de la Distribución Independiente"
     ]
   },
   {
@@ -615,6 +637,10 @@ const TEMAS = [
         ],
         "correcta": 1
       }
+    ],
+    "datosClave": [
+      "Oparin-Haldane · Margulis · Lamarck · Darwin-Wallace",
+      "5 reinos: Monera, Protista, Fungi, Plantae, Animalia"
     ]
   },
   {
@@ -739,6 +765,19 @@ const TEMAS = [
         ],
         "correcta": 3
       }
+    ],
+    "datosClave": [
+      "Población → Comunidad → Ecosistema",
+      "Ciclos biogeoquímicos (carbono, nitrógeno, agua)"
     ]
   }
 ];
+
+  if (typeof window !== "undefined") {
+    window.SUBJECT_DATA = window.SUBJECT_DATA || {};
+    window.SUBJECT_DATA["biologia"] = TEMAS;
+  }
+  if (typeof window !== "undefined") {
+    window.__LAST_LOADED_TEMAS__ = TEMAS;
+  }
+})();

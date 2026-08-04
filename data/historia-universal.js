@@ -1,5 +1,7 @@
 // Datos: Guía de historia-universal — Examen de ingreso a licenciatura UNAM
-// Cada ejercicio incluye "opciones" (4 respuestas) y "correcta" (índice de la respuesta correcta)
+// Cada tema incluye "datosClave" (fechas, nombres, fórmulas para repaso rápido).
+// Cada ejercicio incluye "opciones" (4 respuestas) y "correcta" (índice de la respuesta correcta).
+(function () {
 const TEMAS = [
   {
     "n": 1,
@@ -121,6 +123,11 @@ const TEMAS = [
         ],
         "correcta": 2
       }
+    ],
+    "datosClave": [
+      "476 d.C. — Caída del Imperio Romano de Occidente",
+      "1789 — Inicio de la Edad Contemporánea",
+      "Prehistoria · Edad Antigua · Edad Media · Edad Moderna · Edad Contemporánea"
     ]
   },
   {
@@ -246,6 +253,12 @@ const TEMAS = [
         ],
         "correcta": 1
       }
+    ],
+    "datosClave": [
+      "1776 — Independencia de las Trece Colonias",
+      "1789 — Revolución Francesa",
+      "Voltaire, Rousseau, Montesquieu",
+      "Napoleón Bonaparte"
     ]
   },
   {
@@ -368,6 +381,11 @@ const TEMAS = [
         ],
         "correcta": 3
       }
+    ],
+    "datosClave": [
+      "Karl Marx y Friedrich Engels",
+      "Cavour y Garibaldi — unificación de Italia",
+      "Otto von Bismarck — unificación de Alemania"
     ]
   },
   {
@@ -489,6 +507,10 @@ const TEMAS = [
         ],
         "correcta": 3
       }
+    ],
+    "datosClave": [
+      "1870-1914 — rivalidades imperialistas",
+      "Reparto colonial de África"
     ]
   },
   {
@@ -612,6 +634,11 @@ const TEMAS = [
         ],
         "correcta": 1
       }
+    ],
+    "datosClave": [
+      "1914 — Asesinato del archiduque Francisco Fernando en Sarajevo",
+      "1917 — Revolución Socialista Rusa",
+      "Tratado de Versalles"
     ]
   },
   {
@@ -733,6 +760,12 @@ const TEMAS = [
         ],
         "correcta": 0
       }
+    ],
+    "datosClave": [
+      "1929 — Crisis de Wall Street (Gran Depresión)",
+      "Mussolini — fascismo en Italia",
+      "Hitler — nazismo en Alemania",
+      "Franklin D. Roosevelt — New Deal"
     ]
   },
   {
@@ -855,6 +888,11 @@ const TEMAS = [
         ],
         "correcta": 3
       }
+    ],
+    "datosClave": [
+      "1939 — Invasión alemana a Polonia",
+      "1945 — Bombas atómicas en Hiroshima y Nagasaki",
+      "Creación de la ONU"
     ]
   },
   {
@@ -976,6 +1014,11 @@ const TEMAS = [
         ],
         "correcta": 2
       }
+    ],
+    "datosClave": [
+      "Bloque capitalista (EUA) vs. bloque socialista (URSS)",
+      "Guerra Fría",
+      "Muro de Berlín"
     ]
   },
   {
@@ -1097,6 +1140,20 @@ const TEMAS = [
         ],
         "correcta": 1
       }
+    ],
+    "datosClave": [
+      "1989 — Caída del Muro de Berlín",
+      "1991 — Disolución de la URSS",
+      "Globalización económica y tecnológica"
     ]
   }
 ];
+
+  if (typeof window !== "undefined") {
+    window.SUBJECT_DATA = window.SUBJECT_DATA || {};
+    window.SUBJECT_DATA["historia-universal"] = TEMAS;
+  }
+  if (typeof window !== "undefined") {
+    window.__LAST_LOADED_TEMAS__ = TEMAS;
+  }
+})();

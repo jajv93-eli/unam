@@ -1,5 +1,7 @@
 // Datos: Guía de espanol — Examen de ingreso a licenciatura UNAM
-// Cada ejercicio incluye "opciones" (4 respuestas) y "correcta" (índice de la respuesta correcta)
+// Cada tema incluye "datosClave" (fechas, nombres, fórmulas para repaso rápido).
+// Cada ejercicio incluye "opciones" (4 respuestas) y "correcta" (índice de la respuesta correcta).
+(function () {
 const TEMAS = [
   {
     "n": 1,
@@ -121,6 +123,11 @@ const TEMAS = [
         ],
         "correcta": 1
       }
+    ],
+    "datosClave": [
+      "Referencial → informa",
+      "Apelativa → ordena o pide",
+      "Poética → belleza del lenguaje"
     ]
   },
   {
@@ -243,6 +250,11 @@ const TEMAS = [
         ],
         "correcta": 0
       }
+    ],
+    "datosClave": [
+      "Descriptivo",
+      "Narrativo",
+      "Argumentativo"
     ]
   },
   {
@@ -367,6 +379,11 @@ const TEMAS = [
         ],
         "correcta": 1
       }
+    ],
+    "datosClave": [
+      "Idea principal vs. idea secundaria",
+      "Inferencia de datos",
+      "Punto de vista del autor"
     ]
   },
   {
@@ -489,6 +506,11 @@ const TEMAS = [
         ],
         "correcta": 3
       }
+    ],
+    "datosClave": [
+      "Oración = sujeto + predicado",
+      "Sujeto tácito, simple o compuesto",
+      "Predicado verbal o nominal"
     ]
   },
   {
@@ -611,6 +633,12 @@ const TEMAS = [
         ],
         "correcta": 3
       }
+    ],
+    "datosClave": [
+      "Causales: porque, ya que",
+      "Consecutivos: por lo tanto",
+      "Adversativos: pero, sin embargo",
+      "De adición: además, también"
     ]
   },
   {
@@ -732,6 +760,12 @@ const TEMAS = [
         ],
         "correcta": 2
       }
+    ],
+    "datosClave": [
+      "Sinónimos",
+      "Antónimos",
+      "Homófonos",
+      "Analogías"
     ]
   },
   {
@@ -855,6 +889,20 @@ const TEMAS = [
         ],
         "correcta": 3
       }
+    ],
+    "datosClave": [
+      "Agudas: tilde si terminan en n, s o vocal",
+      "Llanas: tilde si NO terminan en n, s o vocal",
+      "Esdrújulas: siempre llevan tilde"
     ]
   }
 ];
+
+  if (typeof window !== "undefined") {
+    window.SUBJECT_DATA = window.SUBJECT_DATA || {};
+    window.SUBJECT_DATA["espanol"] = TEMAS;
+  }
+  if (typeof window !== "undefined") {
+    window.__LAST_LOADED_TEMAS__ = TEMAS;
+  }
+})();

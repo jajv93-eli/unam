@@ -14,70 +14,24 @@
     <p class="landing-sub">Puntos esenciales y ejercicios de práctica con respuestas, organizados por el temario oficial. Elige una materia para empezar a repasar.</p>
   </div>
 
-  <div class="subject-grid">
-    <a class="subject-card" href="matematicas.html">
-      <span class="num">01</span>
-      <h3>Matemáticas</h3>
-      <p>17 temas: álgebra, funciones, trigonometría, geometría analítica, límites, derivadas e integrales.</p>
-      <span class="tag">Disponible</span>
-    </a>
-
-    <a class="subject-card" href="espanol.html">
-      <span class="num">02</span>
-      <h3>Español</h3>
-      <p>7 temas: funciones de la lengua, formas del discurso, comprensión de lectura, gramática, redacción, vocabulario y ortografía.</p>
-      <span class="tag">Disponible</span>
-    </a>
-
-    <a class="subject-card" href="fisica.html">
-      <span class="num">03</span>
-      <h3>Física</h3>
-      <p>Cinemática, leyes de Newton, termodinámica, ondas, electromagnetismo, fluidos, óptica y física contemporánea.</p>
-      <span class="tag">Disponible</span>
-    </a>
-
-    <a class="subject-card" href="quimica.html">
-      <span class="num">04</span>
-      <h3>Química</h3>
-      <p>Temas básicos, agua, aire, alimentos, energía y reacciones, química del carbono.</p>
-      <span class="tag">Disponible</span>
-    </a>
-
-    <a class="subject-card" href="biologia.html">
-      <span class="num">05</span>
-      <h3>Biología</h3>
-      <p>Célula, metabolismo celular, reproducción, herencia, evolución, ecosistemas.</p>
-      <span class="tag">Disponible</span>
-    </a>
-
-    <a class="subject-card" href="historia-universal.html">
-      <span class="num">06</span>
-      <h3>Historia universal</h3>
-      <p>De las revoluciones burguesas al mundo actual.</p>
-      <span class="tag">Disponible</span>
-    </a>
-
-    <a class="subject-card" href="historia-mexico.html">
-      <span class="num">07</span>
-      <h3>Historia de México</h3>
-      <p>De la Nueva España al México contemporáneo.</p>
-      <span class="tag">Disponible</span>
-    </a>
-
-    <a class="subject-card" href="literatura.html">
-      <span class="num">08</span>
-      <h3>Literatura</h3>
-      <p>El texto, géneros y corrientes literarias, redacción y técnicas de investigación.</p>
-      <span class="tag">Disponible</span>
-    </a>
-
-    <div class="subject-card disabled">
-      <span class="num">09</span>
-      <h3>Geografía</h3>
-      <p>La Tierra, geografía física y humana, economía mundial y organización política.</p>
-      <span class="tag">Próximamente</span>
-    </div>
+  <div class="search-wrap">
+    <input type="text" id="global-search" class="search-input" placeholder="Buscar un tema, fecha, nombre o fórmula… (ej. “Hidalgo”, “1929”, “F=ma”)" autocomplete="off">
+    <div id="search-results" class="search-results"></div>
   </div>
+
+  <div class="subject-grid" id="subject-grid"></div>
 </div>
+
+<script src="assets/subjects.js"></script>
+<script src="data/matematicas.js"></script>
+<script src="data/espanol.js"></script>
+<script src="data/fisica.js"></script>
+<script src="data/quimica.js"></script>
+<script src="data/biologia.js"></script>
+<script src="data/historia-universal.js"></script>
+<script src="data/historia-mexico.js"></script>
+<script src="data/literatura.js"></script>
+<script src="data/geografia.js"></script>
+<script src="assets/index.js"></script>
 </body>
 </html>
