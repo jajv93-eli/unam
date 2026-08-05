@@ -39,6 +39,57 @@
   }
   current = initialTemaFromHash();
 
+  // ---- Menú móvil (cajón lateral) ----
+  function isMobile() {
+    return window.matchMedia("(max-width: 800px)").matches;
+  }
+  function openSidebar() {
+    const sb = document.getElementById("sidebar");
+    const bd = document.getElementById("sidebar-backdrop");
+    if (sb) sb.classList.add("open");
+    if (bd) bd.classList.add("open");
+    document.body.style.overflow = "hidden";
+  }
+  function closeSidebar() {
+    const sb = document.getElementById("sidebar");
+    const bd = document.getElementById("sidebar-backdrop");
+    if (sb) sb.classList.remove("open");
+    if (bd) bd.classList.remove("open");
+    document.body.style.overflow = "";
+  }
+  function closeSidebarIfMobile() {
+    if (isMobile()) closeSidebar();
+  }
+
+  function setupMobileChrome() {
+    const app = document.querySelector(".app");
+    if (!app || document.querySelector(".mobile-topbar")) return;
+
+    const topbar = document.createElement("div");
+    topbar.className = "mobile-topbar";
+    topbar.innerHTML =
+      '<button class="hamburger-btn" id="hamburger-btn" aria-label="Abrir menú de temas">☰</button>' +
+      '<span class="mobile-topbar-label">' +
+      subjectLabel +
+      "</span>";
+    app.insertBefore(topbar, app.firstChild);
+
+    const backdrop = document.createElement("div");
+    backdrop.className = "sidebar-backdrop";
+    backdrop.id = "sidebar-backdrop";
+    backdrop.onclick = closeSidebar;
+    app.appendChild(backdrop);
+
+    document.getElementById("hamburger-btn").onclick = () => {
+      const sb = document.getElementById("sidebar");
+      if (sb && sb.classList.contains("open")) {
+        closeSidebar();
+      } else {
+        openSidebar();
+      }
+    };
+  }
+
   function renderSidebar() {
     const sb = document.getElementById("sidebar");
     sb.innerHTML = "";
@@ -61,6 +112,7 @@
       : "🖨 Modo repaso exprés";
     reviewBtn.onclick = () => {
       reviewMode = !reviewMode;
+      closeSidebarIfMobile();
       render();
       window.scrollTo(0, 0);
     };
@@ -79,6 +131,7 @@
         btn.onclick = () => {
           current = i;
           history.replaceState(null, "", "#tema-" + t.n);
+          closeSidebarIfMobile();
           render();
           window.scrollTo(0, 0);
         };
@@ -380,6 +433,7 @@
     prevBtn.onclick = () => {
       current--;
       history.replaceState(null, "", "#tema-" + temas[current].n);
+      closeSidebarIfMobile();
       render();
       window.scrollTo(0, 0);
     };
@@ -389,6 +443,7 @@
     nextBtn.onclick = () => {
       current++;
       history.replaceState(null, "", "#tema-" + temas[current].n);
+      closeSidebarIfMobile();
       render();
       window.scrollTo(0, 0);
     };
@@ -412,5 +467,6 @@
     renderMain();
   }
 
+  setupMobileChrome();
   render();
 })();
